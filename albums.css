@@ -1,0 +1,773 @@
+:root {
+    --background-color: rgb(23, 23, 23);
+    --border-color: rgb(255, 255, 255, 0.1);
+    --highlight-color: rgb(0,139,139);
+    --yt-color: rgb(229, 57, 53);
+}
+
+body {
+    background-color: var(--background-color);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1, h2, h3, a, p, li, span {
+    font-family: "Raleway", sans-serif;
+    font-weight: 400;
+    color: white;
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--highlight-color);
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+}
+
+nav .nav-section {
+    padding: 2rem 2rem;
+    display: flex;
+    gap: 1rem;
+    border-left: 1px solid var(--border-color);
+    align-items: center;
+    justify-content: center;
+}
+
+#nav-mobile-section {
+    display: flex;
+    flex-basis: calc(100% * (2 / 3));
+    z-index: 2;
+}
+
+#nav-toggle-button { 
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    border-left: 1px solid var(--border-color);
+    color: white;
+    cursor: pointer;
+    display: none;
+    gap: 0.8rem;
+    height: 100%;
+    justify-content: center;
+    outline: none;
+    padding: 0rem 3rem;
+    position: relative;
+    z-index: 3;
+}
+
+#nav-toggle-button:hover,
+#nav-toggle-button:hover > span {
+    color: var(--highlight-color);
+}
+
+#nav-toggle-button > span,
+#nav-toggle-button > i { 
+    display: inline-block;
+    height: 1rem;
+    line-height: 1rem;
+}
+
+#nav-social-section,
+#nav-contact-section { 
+    flex-grow: 1;
+}
+#nav-mobile-section,
+#nav-contact-section { 
+    font-size: 2rem;
+}
+
+#nav-logo-section {
+    flex-basis: calc(100% / 3);
+    justify-content: flex-start;
+}
+
+#nav-logo-section > a > i {
+    font-size: 2.5rem;
+}
+
+#nav-link-section {
+    flex-basis: 50%;
+    gap: 6rem; 
+}
+
+#nav-social-section {
+    gap: 3rem;
+}
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    margin-top: 1px; /* Adjust the margin as needed */
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: center; /* Centers the image */
+}
+.background-2-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    margin-top: -1vw; /* Increase the value to move the element up */
+}
+
+
+
+h4 {
+    flex-basis: 50%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+h3 {
+    flex-basis: 50%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    margin: 0px;
+    text-transform: uppercase;
+    color: white;
+}
+
+h5 {
+    flex-basis: 50%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3.5vw;
+    line-height: 3vw;
+    margin: 0px;
+    text-transform: uppercase;
+    color: black;
+}
+
+h6 {
+    flex-basis: 50%;
+    font-family: "Dela Gothic One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 2.5vw;
+    line-height: 3vw;
+    margin: 0px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.banner {
+    position: relative;
+}
+
+.background-text {
+    position: relative;
+    top: -46vw;
+    right: -57vw;
+    color: #000;
+}
+#background-text:hover {
+    color: var(--highlight-color);
+}
+
+.menu-container {
+    position: relative;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.menu-icon {
+    font-size: 30px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.menu {
+    display: none;
+    position: absolute;
+    top: 100px;
+    right: -100px;
+    background-color: #171717;
+    border: 1px solid var(--border-color);
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 250px; /* Adjust the width as needed */
+}
+
+.menu-container {
+    position: relative;
+    color: white;
+}
+
+.menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu ul li {
+    border-bottom: 1px solid #171717;
+}
+
+.menu ul li:last-child {
+    border-bottom: none;
+}
+
+.menu ul li a {
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul li a:hover {
+    background-color: var(--highlight-color);
+}
+
+/* Show the menu when the checkbox is checked */
+#menu-toggle:checked + .menu-icon + .menu {
+    display: block;
+}
+
+h4, h3,  p, a,li,label {
+    user-select: none;
+}
+
+
+.menu ul li a {
+    color: white;
+}
+
+
+
+
+
+.services {
+    background: #131313;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+.services__container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--backround-color);
+}
+
+.services__card {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(23, 23, 23, 0) 0%,
+            rgba(23, 23, 23, 0.9) 100%
+        ),
+        url('/images/pic3.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+.services__card:before {
+    opacity: 0.2;
+}
+
+.services__card:nth-child(2) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(23, 23, 23, 0) 0%,
+            rgba(23, 23, 23, 0.9) 100%
+        ),
+        url('/images/pic4.jpg');
+}
+
+.services__card h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services__card p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: rgb(23, 23, 23);
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+}
+
+.services__card button:hover {
+    cursor: pointer;
+}
+
+.services__card:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 960px) {
+    .services {
+        height: 1600px;
+    }
+
+    .services h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 1312px) {
+    .services {
+        position: relative;
+        top: 100px; /* Adjust the value as needed */
+    }
+}
+
+.services__card button:hover {
+    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+}
+
+.services__card :nth-child(2) h2,
+.services__card :nth-child(2) p {
+    color: #000;
+}
+
+                    /**/
+
+
+.music {
+    position: relative;
+
+    top: 1vw;
+    right: 0vw;
+    color: #000;
+    text-align: center;
+}
+.music-2 {
+    position: relative;
+    top: 1vw;
+    right: 0vw;
+    color: #000;
+    text-align: center;
+
+}
+
+
+
+.main__btn__music {
+    font-size: 1rem;
+    background-image: linear-gradient(to top, #363636 0%, #4d4a4a 100%);
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    margin-top: 2rem;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.35s;
+    top: 1vw;
+}
+
+.main__btn__music a {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    text-decoration: none;
+}
+
+.main__btn__music:after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: var(--highlight-color);
+    transition: all 0.35s;
+    border-radius: 4px;
+}
+
+.main__btn__music:hover {
+    color: #fff;
+}
+
+.main__btn__music:hover:after {
+    width: 100%;
+}
+@media screen and (max-width: 480px) {
+    .main__btn__music {
+        top: auto;
+        right: auto;
+    }
+
+
+}
+
+.services__music {
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+
+.services__container__music {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    background-color: var(--backround-color);
+}
+
+
+.services__card__music {
+    margin: 1rem;
+    height: 525px;
+    width: 400px;
+    border-radius: 4px;
+    background-image: linear-gradient(
+            to bottom,
+            rgba(23, 23, 23, 0) 0%,
+            rgba(23, 23, 23, 0.9) 100%
+        ),
+        url('/images/pic3.jpg');
+    background-size: cover;
+    position: relative;
+    color: #fff;
+}
+
+
+.services__card__music:before {
+    opacity: 0.2;
+}
+
+.services__card__music:nth-child(2) {
+    background-image: linear-gradient(
+            to bottom,
+            rgba(23, 23, 23, 0) 0%,
+            rgba(23, 23, 23, 0.9) 100%
+        ),
+        url('/images/pic4.jpg');
+}
+
+.services__card__music h2 {
+    position: absolute;
+    top: 350px;
+    left: 30px;
+}
+
+.services__card__music p {
+    position: absolute;
+    top: 400px;
+    left: 30px;
+}
+
+.services__card__music button {
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+    background: rgb(23, 23, 23);
+    position: absolute;
+    top: 440px;
+    left: 30px;
+    font-size: 1rem;
+}
+
+
+.services__card__music button:hover {
+    cursor: pointer;
+}
+
+.services__card__music:hover {
+    transform: scale(1.075);
+    transition: 0.2s ease-in;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 960px) {
+    .services__music {
+        height: 1600px;
+    }
+
+    .services__music h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .services__music {
+        height: 1400px;
+    }
+
+    .services__music h1 {
+        font-size: 1.2rem;
+    }
+
+    .services__card__music {
+        width: 300px;
+    }
+}
+.services {
+    background-color: #171717;
+}
+.services__card__music:nth-child(1) {
+    background-image: url('im/photos-html/berlin/berlin-21.jpg' );
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(2) {
+    background-image: url('im/photos-html/coheed/coheed-06.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(3) {
+    background-image: url('im/photos-html/dublin/dublin-107.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(4) {
+    background-image: url('im/photos-html/epica/epica-06.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(5) {
+    background-image: url('im/photos-html/ivinghoe/im\ 2.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(6) {
+    background-image: url('im/photos-html/lb/london-91.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(7) {
+    background-image: url('im/photos-html/london f/london-67.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+.services__card__music:nth-child(8) {
+    background-image: url('im/photos-html/nightwish/nightwish-68.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(9) {
+    background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(10) {
+    background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(11) {
+    background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(12) {
+    background-image: url('im/photos-html/scotland/scotland-48.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(13) {
+    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(14) {
+    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+@media (max-width: 1312px) {
+    .services__music {
+        position: relative;
+        top: 100px; /* Adjust the value as needed */
+    }
+}
+
+.services__card__music button:hover {
+    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+}
+
+.services__card__music :nth-child(2) h2,
+.services__card__music :nth-child(2) p {
+    color: #000;
+}
+
+
+@media (max-width: 1312px) {
+    .music {
+        margin-top: 125px
+    }
+}
+@media (max-width: 500px) {
+    .music {
+        margin-top: 150px
+    }
+}
+
+.menu-icon:hover {
+    color: var(--highlight-color); 
+
+}
+
+html, body {
+    height: 100%;
+    overflow: auto;
+}
+
+.services__music {
+    background: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Ensure it covers the full viewport height */
+    position: relative; /* Make it position relative */
+    z-index: 1; /* Adjust z-index as needed */
+}
+
+.services__container__music{
+    position: absolute;
+    top: 0vw;  
+}
+
+@media (max-width: 1200px) {
+    .services__music{
+        position: absolute;
+        top: 40vw;
+        right: 4000px;
+    }
+    
+}
+
+
+
+@media (max-width: 768px) {
+    #nav-link-section {
+        display: none;
+    }
+}
+
+@media(max-width: 1200px) {    
+    #nav-mobile-section {
+      flex-basis: calc(100% * 0.75);
+    }
+
+    #nav-logo-section {
+      flex-basis: calc(100% * 0.25);
+    }
+    
+    #nav-link-section {
+    flex-basis: calc(100% / 3);
+    gap: 3rem;
+    }
+}
+.services__container__music {
+                
+    position: absolute;
+    top: -10vw;
+    left: 0;
+    right: 0;
+}
+@media (max-width: 768px){
+    .services__container__music {
+                
+        position: absolute;
+        top: -20vw;
+        left: 0;
+        right: 0;
+    }
+}
+    
