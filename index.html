@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Oscar</title>
+    <link rel="stylesheet" href="front_style.css">
+    <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
+    <script src="front_app.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav data-toggled="false" data-transitionable="false">
+        <div id="nav-logo-section" class="nav-section">
+            <a href="#">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+        <div id="nav-mobile-section">
+            <div id="nav-link-section" class="nav-section">
+                <a href="#">WELCOME TO MY WEBSITE</a>
+            </div>
+            <div id="nav-social-section" class="nav-section">
+                <a href="https://www.instagram.com/oscar_photography__/">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/@wasaris3621/featured" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>    
+                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf?si=bTeMvprtQR-ppA2pW-xK6w">
+                    <i class="fa-brands fa-spotify"></i>
+                </a>
+            </div>
+            <div id="nav-contact-section" class="nav-section">
+                <div class="menu-container">
+                    <input type="checkbox" id="menu-toggle">
+                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                    <nav class="menu">
+                        <ul>
+                            <li><a href="photos.html">Photography</a></li>
+                            <li><a href="music.html">Music</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
+    </nav>
+    <div class="banner">
+        <div class="background-image">
+            <img src="im/webs.jpg" alt="scotland">
+        </div>
+        <div class ="background-text">
+            <h5>Photographer.</h5>
+            <h5>musician.</h5>
+            <h6> Currently doing </h6>
+            <h6> something or other.</h6>
+        </div>
+    </div>  
+    <div class="photography">
+        <h4>Photography</h4>
+        <div class="photography-2">
+            <h2>My portfolio which includes photos from concerts to landscape and street photography.Have a look on instagram. <a class="yt-link" href="https://www.instagram.com/oscar_photography__/" target="_blank"><i class="fa-brands fa-instagram"></i></a>  </h2>
+                
+            <button class="main__btn"><a href="albums.html">See all albums</a></button>
+            <style>
+                .main__btn {
+                    margin-bottom: 50px; /* Adjust the value as needed */
+                }
+            </style>
+            <h4 class="photo-albums">Photo albums</h4>
+        </div>
+        
+    </div>
+    <style>
+        .music {
+            margin-bottom: 50px; /* Adjust the value as needed */
+        }
+    </style>
+    <div class="services">
+        
+        <div class="services__container">
+            <div class="services__card">
+                
+                <h2>London</h2>
+                <p>London on 25/06/24</p>
+                <button class="services-btn-1">See more!</button>
+                <button class="services-btn-1">
+                    <a href="london.html">See more!</a>
+                </button>
+
+            </div>
+            <div class="services__card">
+                
+                <h2>Rammstien live aus dublin </h2>
+                <p>live in the RDS on 23/06/24</p>
+                <button class="services-btn-1">
+                    <a href="Rammstein.html">See more!</a>
+                </button>
+
+            </div>
+            <div class="services__card">
+                <h2>Peak district</h2>
+                <p>Peak district 06-08/07/24</p>
+
+                <button class="services-btn-1">
+                    <a href="ilam.html">See more!</a>
+                </button>
+
+            </div>
+        </div>
+    </div>
+
+    <style>
+        .services {
+            margin-bottom: 75px; /* Adjust the value as needed */
+        }
+    </style>
+
+    <div class="music">
+        <h4>Music</h4>
+        <div class="music-2">
+            <h2>My songs. metal mixed with orchestral elements  listen on spotify   </a></i><a class="yt-link" href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf?si=bTeMvprtQR-ppA2pW-xK6w" target="_blank"><i class="fa-brands fa-spotify"></i></a>  and  youtube. </a></i><a class="yt-link" href="https://www.youtube.com/@wasaris3621" target="_blank"><i class="fa-brands fa-youtube"></i></a>     </a></h2>
+            <button class="main__btn__music"><a href="music.html">listen to my music!</a></button>
+            <style>
+                .main__btn__music {
+                    margin-bottom: 50px; /* Adjust the value as needed */
+                }
+            </style>
+            <h4 class="songs">Songs / demos</h4>
+        </div>
+    </div>
+    <style>
+        .music {
+            margin-bottom: 50px; /* Adjust the value as needed */
+        }
+    </style>
+    <div class="services__music">
+        
+        <div class="services__container__music">
+            <div class="services__card__music">
+                
+                <h2>Song 1</h2>
+                <p>Released  3/07/24</p>
+
+                
+                
+
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/X22GPa3qe8c?si=MYSUm1hmFoxcQmao">Listen!</a>
+                </button>
+            </div>
+            <div class="services__card__music">
+                
+                <h2>Orchestral demo </h2>
+                <p>Released  3/07/24</p>
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/nPU_588pFkw?si=DyKvsaBs0YIHyMhs">Listen!</a>
+                </button>
+            </div>
+            <div class="services__card__music">
+                <h2>Dungeon synth demo</h2>
+                <p>Released  3/07/24</p>
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/eB7QIkg9js4?si=KswQrFiJgVw3AyQ2">Listen!</a>
+                </button>
+    
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+
+    <script src="script.js"></script> 
+
+
+
+
+
+</body>
+</html>
+
+
