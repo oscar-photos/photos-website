@@ -11,6 +11,9 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
 }
 
 * {
@@ -755,4 +758,26 @@ body {
 
 .services__card__music button a:hover {
     background: none; /* Prevent the background color change on hover */
+}
+html, body {
+    overflow-x: hidden;
+}
+
+body {
+    position: relative
+}
+
+@media (max-width: 768px) {
+
+    .fa-brands {
+        font-size: 25px; /* Change the size as needed */
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+
+    body {
+        position: relative
+    }
 }
