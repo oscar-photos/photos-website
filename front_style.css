@@ -103,7 +103,8 @@ nav .nav-section {
 }
 
 #nav-logo-section > a > i {
-    font-size: 2.5rem;
+    font-size: 2rem;
+    margin-left: -10px;
 }
 
 #nav-link-section {
@@ -784,5 +785,8 @@ body {
         /* OR */
     }
     
+    #nav-social-section {
+        gap: 1rem;
+    }
 
 }
