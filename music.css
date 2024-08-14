@@ -11,10 +11,24 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
+}
+/* Hide .article-image-section when its article is inactive */
+article[data-status="inactive"] .article-image-section {
+    display: none;
 }
 
-  * {
+/* Additional styles for other states */
+main > article[data-status="active"] .article-image-section {
+    display: block; /* Or any other display property you need */
+}
+
+/* Styles for other article states... */
+
+
+* {
     box-sizing: border-box;
 }
 
@@ -23,7 +37,6 @@ h1, h2, h3, a, p, li, span {
     font-weight: 400;
     color: white;
     margin: 0px;
-
 }
 
 a {
@@ -41,7 +54,7 @@ nav {
 }
 
 nav .nav-section {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     gap: 1rem;
     border-left: 1px solid var(--border-color);
@@ -71,16 +84,8 @@ nav .nav-section {
     position: relative;
     z-index: 3;
 }
-#nav-mobile-section,
-#nav-contact-section { 
-    font-size: 2rem;
-}
 
-.menu-container {
-    position: relative;
-    color: white;
-    position: relative;
-}
+
 
 #nav-toggle-button:hover,
 #nav-toggle-button:hover > span {
@@ -98,14 +103,19 @@ nav .nav-section {
 #nav-contact-section { 
     flex-grow: 1;
 }
+#nav-mobile-section,
+#nav-contact-section { 
+    font-size: 2rem;
+}
 
 #nav-logo-section {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     justify-content: flex-start;
 }
 
 #nav-logo-section > a > i {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    align-content:center ;
 }
 
 #nav-link-section {
@@ -116,6 +126,34 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1px; /* Adjust the margin as needed */
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: center; /* Centers the image */
+}
+.background-2-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: -1vw; /* Increase the value to move the element up */
+}
+
+
 
 h4 {
     flex-basis: 50%;
@@ -317,7 +355,7 @@ main > article:nth-child(3) > .article-image-section {
 
 }
 main > article:nth-child(4) > .article-image-section {
-    background-image: url("im/album\ 1-2.jpg");
+    background-image: url("im/album\ 2-3.jpg");
 }
 
 
@@ -554,6 +592,106 @@ main > article > .article-description-section > .yt > iframe {
 }
 .fa-sharp.fa-solid.fa-plus {
     font-size: 4rem; /* Change the font-size property to increase the size */
+}
+
+
+
+/* Existing styles ... */
+
+@media (max-width: 768px) {
+    /* Adjust services and services__card elements to 50% width */
+    .services__container, .services__container__music {
+        flex-direction: column;
+    }
+
+    .services__card, .services__card__music {
+        width: 50%;
+        height: auto; /* Adjust height if necessary */
+        margin: 0.5rem; /* Adjust margins to fit within the new layout */
+    }
+
+    /* Adjust the nav logo and sections to fit better in smaller screens */
+    #nav-logo-section {
+        flex-basis: 50%; /* Adjusts the size of the logo section */
+    }
+
+    #nav-social-section, #nav-contact-section {
+        gap: 1rem; /* Reduces the gap between icons */
+    }
+
+    /* Ensure buttons and text are well-aligned and proportionate */
+    .main__btn, .main__btn__music {
+        width: 50%;
+        font-size: 0.8rem; /* Adjust font size */
+        padding: 10px 16px; /* Adjust padding */
+    }
+    
+    /* Additional adjustments for other sections as needed */
+    .services h1, .services__music h1 {
+        font-size: 1.5rem;
+    }
+}
+
+/* Further adjustments for screens even smaller than 480px */
+@media (max-width: 480px) {
+    .services__card, .services__card__music {
+        width: 100%; /* Full width for very small screens */
+    }
+    
+    /* Fine-tune the button sizes */
+    .main__btn, .main__btn__music {
+        width: 100%;
+        font-size: 0.7rem;
+        padding: 8px 12px;
+    }
+    
+    /* Adjust navigation for very small screens */
+    #nav-logo-section {
+        width: auto;
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 1200px) {
+    .article-section {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .article-title-section {
+        order: 2;
+    }
+
+    .article-description-section {
+        order: 1;
+    }
+
+    .article-nav-section {
+        order: 3;
+    }
+}
+
+@media (max-width: 1200px) {
+    .article-section {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+    }
+
+    .article-nav-section {
+        order: 4;
+    }
+}
+@media (max-width: 450px) {
+
+    .main{
+        size: 50%;
+    }
+
+}
+
+article[data-status="inactive"] .article-image-section {
+    display: none;
 }
 
 
