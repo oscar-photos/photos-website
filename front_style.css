@@ -98,13 +98,13 @@ nav .nav-section {
 }
 
 #nav-logo-section {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     justify-content: flex-start;
 }
 
 #nav-logo-section > a > i {
-    font-size: 2rem;
-    margin-left: -10px;
+    font-size: 3rem;
+    align-content:center ;
 }
 
 #nav-link-section {
@@ -789,4 +789,16 @@ body {
         gap: 1rem;
     }
 
+
+}
+
+@media (max-width: 350px) {
+    #nav-logo-section > a > i {
+        font-size: 2rem; /* Font size for smaller viewports */
+    }
+}
+@media (max-width: 300px) {
+    #nav-logo-section > a > i {
+        font-size: 1rem; /* Font size for smaller viewports */
+    }
 }

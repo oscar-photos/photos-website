@@ -11,10 +11,13 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
-    overflow: hidden;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
 }
 
-  * {
+
+* {
     box-sizing: border-box;
 }
 
@@ -23,7 +26,6 @@ h1, h2, h3, a, p, li, span {
     font-weight: 400;
     color: white;
     margin: 0px;
-
 }
 
 a {
@@ -41,7 +43,7 @@ nav {
 }
 
 nav .nav-section {
-    padding: 3rem 2rem;
+    padding: 2rem 2rem;
     display: flex;
     gap: 1rem;
     border-left: 1px solid var(--border-color);
@@ -71,16 +73,8 @@ nav .nav-section {
     position: relative;
     z-index: 3;
 }
-#nav-mobile-section,
-#nav-contact-section { 
-    font-size: 2rem;
-}
 
-.menu-container {
-    position: relative;
-    color: white;
-    position: relative;
-}
+
 
 #nav-toggle-button:hover,
 #nav-toggle-button:hover > span {
@@ -98,14 +92,19 @@ nav .nav-section {
 #nav-contact-section { 
     flex-grow: 1;
 }
+#nav-mobile-section,
+#nav-contact-section { 
+    font-size: 2rem;
+}
 
 #nav-logo-section {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     justify-content: flex-start;
 }
 
 #nav-logo-section > a > i {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    align-content:center ;
 }
 
 #nav-link-section {
@@ -116,6 +115,34 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
+
+.background-image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: 1px; /* Adjust the margin as needed */
+}
+
+.background-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image covers the entire div */
+    object-position: center; /* Centers the image */
+}
+.background-2-image img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-top: -1vw; /* Increase the value to move the element up */
+}
+
+
 
 h4 {
     flex-basis: 50%;
@@ -164,7 +191,6 @@ h6 {
     text-transform: uppercase;
     color: black;
 }
-
 .menu-container {
     position: relative;
 }
@@ -182,8 +208,8 @@ h6 {
 .menu {
     display: none;
     position: absolute;
-    top: 100px;
-    right: -100px;
+    top: 75px;
+    right: -25px;
     background-color: #171717;
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -596,4 +622,51 @@ article[data-index="3"] .article-nav-section {
 
 
 }
+
+
+
+@media (max-width: 768px) {
+
+    .fa-brands {
+        font-size: 25px; /* Change the size as needed */
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    #nav-logo-section {
+        width: 50px; /* Set a fixed width */
+        /* OR */
+        padding: 15px;
+    }
+    #nav-links-section {
+        width: 40px; /* Set a fixed width */
+        /* OR */
+    }
+    
+
+}
+
+.background-text {
+
+    margin-right: 50px; /* Ensures there’s no margin on the right */
+    width: fit-content; /* Adjusts the width to fit the content */
+}
+
+.nav-contact-section{
+    width: 50px; /* Change the width as needed */
+    height: 50px; /* Change the height as needed */
+    /* Add other styles as needed */
+}
+
+
+.nav {
+    width: 100%;
+    /* Add other styles as needed */
+}
+body {
+        overflow-x: hidden;
+    }
+
 

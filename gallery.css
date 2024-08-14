@@ -11,7 +11,11 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
 }
+
 
 * {
     box-sizing: border-box;
@@ -31,7 +35,6 @@ a {
 a:hover {
     color: var(--highlight-color);
 }
-
 
 nav {
     display: flex;
@@ -71,6 +74,8 @@ nav .nav-section {
     z-index: 3;
 }
 
+
+
 #nav-toggle-button:hover,
 #nav-toggle-button:hover > span {
     color: var(--highlight-color);
@@ -93,12 +98,13 @@ nav .nav-section {
 }
 
 #nav-logo-section {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     justify-content: flex-start;
 }
 
 #nav-logo-section > a > i {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    align-content:center ;
 }
 
 #nav-link-section {
@@ -116,7 +122,7 @@ nav .nav-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow: hidden;
     margin-top: 1px; /* Adjust the margin as needed */
 }
 
@@ -132,7 +138,7 @@ nav .nav-section {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    overflow: hidden;
     margin-top: -1vw; /* Increase the value to move the element up */
 }
 
@@ -381,3 +387,74 @@ h4, h3,  p, a,li,label {
     object-position: center;
     grid-row: span 2;
 }
+
+
+
+
+
+    
+@media (max-width: 768px) {
+
+    .fa-brands {
+        font-size: 25px; /* Change the size as needed */
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    #nav-logo-section {
+        width: 50px; /* Set a fixed width */
+        /* OR */
+        padding: 15px;
+    }
+    #nav-links-section {
+        width: 40px; /* Set a fixed width */
+        /* OR */
+    }
+    
+    #nav-social-section {
+        gap: 1rem;
+    }
+
+
+}
+
+@media (max-width: 350px) {
+    #nav-logo-section > a > i {
+        font-size: 2rem; /* Font size for smaller viewports */
+    }
+}
+@media (max-width: 300px) {
+    #nav-logo-section > a > i {
+        font-size: 1rem; /* Font size for smaller viewports */
+    }
+}
+
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr; /* Single column layout */
+        grid-auto-rows: auto; /* Automatically adjust row height */
+    }
+    
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* 2 columns each 50% */
+        grid-template-rows: repeat(2, 1fr); /* 2 rows each 50% */
+        grid-gap: 10px; /* Adjust the gap as needed */
+    }
+
+    .container > a, .container > img, .container > video {
+        width: 100%;
+        height: 100%; /* Ensure each item fills the grid cell */
+        object-fit: cover; /* Adjust based on your preference */
+    }
+}
+    
+    
+
+
+
+
+

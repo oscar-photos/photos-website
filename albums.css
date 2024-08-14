@@ -11,7 +11,11 @@ body {
     flex-direction: column;
     height: 100vh;
     margin: 0px;
+    overflow-x: hidden; 
+    margin: 0;
+    padding: 0;
 }
+
 
 * {
     box-sizing: border-box;
@@ -70,6 +74,8 @@ nav .nav-section {
     z-index: 3;
 }
 
+
+
 #nav-toggle-button:hover,
 #nav-toggle-button:hover > span {
     color: var(--highlight-color);
@@ -92,12 +98,13 @@ nav .nav-section {
 }
 
 #nav-logo-section {
-    flex-basis: calc(100% / 3);
+    flex-basis: calc(100% / 4);
     justify-content: flex-start;
 }
 
 #nav-logo-section > a > i {
-    font-size: 2.5rem;
+    font-size: 3rem;
+    align-content:center ;
 }
 
 #nav-link-section {
@@ -115,7 +122,7 @@ nav .nav-section {
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    overflow: hidden;
     margin-top: 1px; /* Adjust the margin as needed */
 }
 
@@ -131,7 +138,7 @@ nav .nav-section {
     display: flex;
     justify-content: center;
     align-items: center;
-   
+    overflow: hidden;
     margin-top: -1vw; /* Increase the value to move the element up */
 }
 
@@ -184,6 +191,7 @@ h6 {
     text-transform: uppercase;
     color: black;
 }
+
 
 .banner {
     position: relative;
@@ -770,4 +778,3 @@ html, body {
         right: 0;
     }
 }
-    
