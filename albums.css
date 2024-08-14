@@ -778,3 +778,48 @@ html, body {
         right: 0;
     }
 }
+
+
+@media (max-width: 768px) {
+
+    .fa-brands {
+        font-size: 25px; /* Change the size as needed */
+    }
+
+    html, body {
+        overflow-x: hidden;
+    }
+    
+    #nav-logo-section {
+        width: 50px; /* Set a fixed width */
+        /* OR */
+        padding: 15px;
+    }
+    #nav-links-section {
+        width: 40px; /* Set a fixed width */
+        /* OR */
+    }
+    
+    #nav-social-section {
+        gap: 1rem;
+    }
+
+
+}
+
+@media (max-width: 350px) {
+    #nav-logo-section > a > i {
+        font-size: 2rem; /* Font size for smaller viewports */
+    }
+}
+@media (max-width: 300px) {
+    #nav-logo-section > a > i {
+        font-size: 1rem; /* Font size for smaller viewports */
+    }
+}
+
+@media (max-width: 523px){
+    .services__music{
+        margin-top: 100px;
+    }
+}
