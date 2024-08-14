@@ -6,33 +6,36 @@
     <title>Oscar</title>
     <link rel="stylesheet" href="music.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
-    <script src="music.js"></script>
+    <script src="front_app.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
 </head>
 <body>
+
     <nav data-toggled="false" data-transitionable="false">
         <div id="nav-logo-section" class="nav-section">
             <a href="index.html">
+
+                
                 <i class="fa-solid fa-house"></i>
             </a>
         </div>
         <div id="nav-mobile-section">
             <div id="nav-link-section" class="nav-section">
-                <a href="#">Music</a>
+                <a href="#">music</a>
             </div>
             <div id="nav-social-section" class="nav-section">
                 <a href="https://www.instagram.com/oscar_photography__/">
                     <i class="fa-brands fa-instagram"></i>
+
                 </a>
                 <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
                     <i class="fa-brands fa-youtube"></i>
                 </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
+                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf?si=bTeMvprtQR-ppA2pW-xK6w">
                     <i class="fa-brands fa-spotify"></i>
                 </a>
             </div>
@@ -41,112 +44,87 @@
                     <input type="checkbox" id="menu-toggle">
                     <label for="menu-toggle" class="menu-icon">&#9776;</label>
                     <nav class="menu">
+                        <style>
+                            .nav-contact-section{
+                                width: 50px; /* Change the width as needed */
+                                height: 50px; /* Change the height as needed */
+                                /* Add other styles as needed */
+                            }
+                        </style>
                         <ul>
-                            <li><a href="index.html">Home</a></li>
                             <li><a href="albums.html">Photography</a></li>
+                            <li><a href="music.html">Music</a></li>
                         </ul>
                     </nav>
                 </div>
             </div>
         </div>
+
         
+        <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
+            <span>Menu</span>
+            <i class="fa-solid fa-bars"></i>
+        </button>
     </nav>
 
-    <main>
-        <article data-index="0" data-status="active">
-            <div class="article-image-section article-section">
-                <h3><br><br>
-                    genric metalcore song
-                    <br><br>
-                    released on 03/07/24 
-                </h3>
-            </div>
-            <div class="article-description-section article-section">
-                <div class="yt">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/M5AMSdvJ9u0?si=Xuj1rj0ZhHHGEVT1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                </div>
-            </div>
-            <div class="article-title-section article-section">
-                <h2>song! </h2>
-                <a href="#"relesed 123></a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-sharp fa-solid fa-plus"></i>
-                </a>
-
-            </div>
-            <div class="article-nav-section article-section">
-                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </article>
-        <article data-index="1" data-status="inactive">    
-            <div class="article-image-section article-section">
-                <h4><br><br>
-                    dungeon synth demo
-                    <br><br>
-                    released on 03/07/24
-                </h4>
-            </div>
-            <div class="article-description-section article-section">
-                <div class="yt">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yGXz0V3Yze4?si=Ov037iz1k2RhWN1v" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
-            </div>
-            <div class="article-title-section article-section">
-                <h2>song!</h2>
-                <a href="#" rel="released 123"></a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-sharp fa-solid fa-plus"></i>
-                </a>
-            </div>
-
-            <div class="article-nav-section article-section">
-                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </article>
-
-
-
-        <article data-index="2" data-status="inactive">
-            <div class="article-image-section article-section">
-                <h3><br><br>
-                    orchestral
-                    song
-                
-                    <br><br>
-                    released on 03/07/24 
-                </h3>
-            </div>
-            <div class="article-description-section article-section">
-                <div class="yt">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Pl-LdzZLi4Q?si=A456UHwqxe7WvSdC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>                </div>
-            </div>
-            <div class="article-title-section article-section">
-                <h2>song! </h2>
-                <a href="#"relesed 123></a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-sharp fa-solid fa-plus"></i>
-                </a>
-
-            </div>
-            <div class="article-nav-section article-section">
-                <button class="article-nav-button" type="button" onclick="handleLeftClick()">
-                    <i class="fa-solid fa-arrow-left"></i>
-                </button>
-                <button class="article-nav-button" type="button" onclick="handleRightClick()">
-                    <i class="fa-solid fa-arrow-right"></i>
-                </button>
-            </div>
-        </article>
+    <style>
+        .nav {
+            width: 100%;
+            /* Add other styles as needed */
+        }
+        body {
+                overflow-x: hidden;
+            }
+    </style>
+    
         
-    </main>
+    <div class="services__music">
+        
+        <div class="services__container__music">
+            <div class="services__card__music">
+                
+                <h2>Song 1</h2>
+                <p>Released  3/07/24</p>
+
+                
+                
+
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/M5AMSdvJ9u0?si=fpWC4ynbIi4FQaJo">Listen!</a>
+                </button>
+            </div>
+
+            
+            <div class="services__card__music">
+                
+                <h2>Orchestral demo </h2>
+                <p>Released  3/07/24</p>
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/M5AMSdvJ9u0?si=fpWC4ynbIi4FQaJo">Listen!</a>
+                </button>
+            </div>
+            <div class="services__card__music">
+                <h2>Dungeon synth demo</h2>
+                <p>Released  3/07/24</p>
+                <button class="services-btn-1">
+                    <a href="https://youtu.be/M5AMSdvJ9u0?si=fpWC4ynbIi4FQaJo">Listen!</a>
+                </button>
+    
+            </div>
+            
+        </div>
+    </div>
+    
+
+    
+
+    <script src="script.js"></script> 
+
+
+
+
+
 </body>
 </html>
+
+
