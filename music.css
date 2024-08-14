@@ -241,6 +241,8 @@ body {
 }
 
 
+
+
 main {
     flex-grow: 1;
     position: relative;
@@ -555,10 +557,4 @@ main > article > .article-description-section > .yt > iframe {
 }
 
 
-
-.article-description-section h4 {
-    position: absolute;
-    bottom: 0;
-    
-}
 
