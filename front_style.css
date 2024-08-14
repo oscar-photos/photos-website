@@ -16,6 +16,7 @@ body {
     padding: 0;
 }
 
+
 * {
     box-sizing: border-box;
 }
@@ -72,6 +73,8 @@ nav .nav-section {
     position: relative;
     z-index: 3;
 }
+
+
 
 #nav-toggle-button:hover,
 #nav-toggle-button:hover > span {
@@ -219,8 +222,8 @@ h6 {
 .menu {
     display: none;
     position: absolute;
-    top: 100px;
-    right: -100px;
+    top: 75px;
+    right: -25px;
     background-color: #171717;
     border: 1px solid var(--border-color);
     border-radius: 5px;
@@ -759,13 +762,7 @@ body {
 .services__card__music button a:hover {
     background: none; /* Prevent the background color change on hover */
 }
-html, body {
-    overflow-x: hidden;
-}
 
-body {
-    position: relative
-}
 
 @media (max-width: 768px) {
 
@@ -776,8 +773,16 @@ body {
     html, body {
         overflow-x: hidden;
     }
-
-    body {
-        position: relative
+    
+    #nav-logo-section {
+        width: 50px; /* Set a fixed width */
+        /* OR */
+        padding: 15px;
     }
+    #nav-links-section {
+        width: 40px; /* Set a fixed width */
+        /* OR */
+    }
+    
+
 }
