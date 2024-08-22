@@ -699,6 +699,13 @@ h4, h3,  p, a,li,label {
     background-position: center;
     /* Add other styles as needed */
 }
+
+.services__card__music:nth-child(18) {
+    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
 @media (max-width: 1312px) {
     .services__music {
         position: relative;
