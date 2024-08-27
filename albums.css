@@ -666,35 +666,35 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(13) {
-    background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
+    background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
 }
 
 .services__card__music:nth-child(14) {
-    background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
+    background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
 }
 
 .services__card__music:nth-child(15) {
-    background-image: url('im/photos-html/scotland/scotland-48.jpg');
+    background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
 }
 
 .services__card__music:nth-child(16) {
-    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
+    background-image: url('im/photos-html/scotland/scotland-48.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
 }
 
 .services__card__music:nth-child(17) {
-    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
@@ -702,6 +702,13 @@ h4, h3,  p, a,li,label {
 
 .services__card__music:nth-child(18) {
     background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-size: cover;
+    background-position: center;
+    /* Add other styles as needed */
+}
+
+.services__card__music:nth-child(19) {
+    background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
