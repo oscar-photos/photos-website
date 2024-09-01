@@ -123,14 +123,14 @@ nav .nav-section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: 1px; /* Adjust the margin as needed */
+    margin-top: 1px; 
 }
 
 .background-image img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures the image covers the entire div */
-    object-position: center; /* Centers the image */
+    object-fit: cover; 
+    object-position: center; 
 }
 .background-2-image img {
     width: 100%;
@@ -139,7 +139,7 @@ nav .nav-section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: -1vw; /* Increase the value to move the element up */
+    margin-top: -1vw; 
 }
 
 
@@ -214,7 +214,7 @@ h6 {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Adjust the width as needed */
+    width: 250px; 
 }
 
 .menu-container {
@@ -247,7 +247,6 @@ h6 {
     background-color: var(--highlight-color);
 }
 
-/* Show the menu when the checkbox is checked */
 #menu-toggle:checked + .menu-icon + .menu {
     display: block;
 }
@@ -543,7 +542,6 @@ main > article > .article-nav-section > .article-nav-button:nth-child(2) {
     }
 }
 
-  /* -- YT link / Source link styles -- */
 
 main > article > .article-description-section > p  > .source-link {
     color: var(--highlight-color);
@@ -562,24 +560,24 @@ main > article > .article-description-section > p {
 
 main > article > .article-description-section {
     flex-direction: column;
-    justify-content: flex-start; /* Changed from flex-end to flex-start */
+    justify-content: flex-start; 
     padding: 0;
     top: 0;
 }
 
 main > article > .article-description-section > .yt {
     display: flex;
-    justify-content: flex-start; /* Ensures the iframe starts at the top */
+    justify-content: flex-start; 
     width: 100%;
     height: 100%;
 }
 
 main > article > .article-description-section > .yt > iframe {
     width: 100%;
-    height: auto; /* Ensures the iframe does not overflow and maintains its aspect ratio */
+    height: auto; 
 }
 .fa-sharp.fa-solid.fa-plus {
-    font-size: 4rem; /* Change the font-size property to increase the size */
+    font-size: 4rem; 
 }
 
 .article-description-section h4 {
@@ -599,26 +597,26 @@ article[data-index="3"] .overlay-image {
     top: 0;
     left: 0;
     width: 100%;
-    height: auto; /* Adjust height if needed to maintain aspect ratio */
+    height: auto; 
     object-fit: cover;
-    z-index: 1; /* Ensure this is below the title and nav sections */
-    outline: none; /* Remove any outline */
-    border: none;  /* Remove any border */
+    z-index: 1; 
+    outline: none; 
+    border: none;  
 }
 
 article[data-index="3"] .article-image-section,
 article[data-index="3"] .article-description-section {
     position: relative;
-    z-index: 2; /* Above the image but below the title and nav sections */
-    outline: none; /* Remove any outline */
-    border: none;  /* Remove any border */
+    z-index: 2; 
+    outline: none; 
+    border: none;  
 }
 
 article[data-index="3"] .article-title-section,
 article[data-index="3"] .article-nav-section {
     position: relative;
-    z-index: 3; /* Ensure this is above the overlay image */
-    background-color: rgb(23, 23, 23); /* Optional: Add background color for better readability */
+    z-index: 3; 
+    background-color: rgb(23, 23, 23); 
 
 
 }
@@ -628,7 +626,7 @@ article[data-index="3"] .article-nav-section {
 @media (max-width: 768px) {
 
     .fa-brands {
-        font-size: 25px; /* Change the size as needed */
+        font-size: 25px; 
     }
 
     html, body {
@@ -636,13 +634,10 @@ article[data-index="3"] .article-nav-section {
     }
     
     #nav-logo-section {
-        width: 50px; /* Set a fixed width */
-        /* OR */
-        padding: 15px;
+        width: 50px; 
     }
     #nav-links-section {
-        width: 40px; /* Set a fixed width */
-        /* OR */
+        width: 40px; /
     }
     
 
@@ -650,20 +645,20 @@ article[data-index="3"] .article-nav-section {
 
 .background-text {
 
-    margin-right: 50px; /* Ensures there’s no margin on the right */
-    width: fit-content; /* Adjusts the width to fit the content */
+    margin-right: 50px; 
+    width: fit-content; 
 }
 
 .nav-contact-section{
-    width: 50px; /* Change the width as needed */
-    height: 50px; /* Change the height as needed */
-    /* Add other styles as needed */
+    width: 50px; 
+    height: 50px; 
+    
 }
 
 
 .nav {
     width: 100%;
-    /* Add other styles as needed */
+    
 }
 body {
         overflow-x: hidden;
@@ -673,7 +668,7 @@ body {
     @media (max-width: 768px) {
 
         .fa-brands {
-            font-size: 25px; /* Change the size as needed */
+            font-size: 25px; 
         }
     
         html, body {
@@ -681,13 +676,10 @@ body {
         }
         
         #nav-logo-section {
-            width: 50px; /* Set a fixed width */
-            /* OR */
-            padding: 15px;
+            width: 50px; 
         }
         #nav-links-section {
-            width: 40px; /* Set a fixed width */
-            /* OR */
+            width: 40px; 
         }
         
         #nav-social-section {
@@ -699,11 +691,11 @@ body {
     
     @media (max-width: 350px) {
         #nav-logo-section > a > i {
-            font-size: 2rem; /* Font size for smaller viewports */
+            font-size: 2rem; 
         }
     }
     @media (max-width: 300px) {
         #nav-logo-section > a > i {
-            font-size: 1rem; /* Font size for smaller viewports */
+            font-size: 1rem; 
         }
     }

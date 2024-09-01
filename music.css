@@ -490,7 +490,7 @@ body {
 @media (max-width: 1312px) {
     .services__music {
         position: relative;
-        top: 100px; /* Adjust the value as needed */
+        top: 100px;  
     }
 }
 

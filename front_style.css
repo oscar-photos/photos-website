@@ -474,33 +474,33 @@ body {
     background-image: url('im/london-07.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+    
 }
 
 .services__card:nth-child(2) {
     background-image: url('im/ramm2.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+       
 }
 
 .services__card:nth-child(3) {
     background-image: url('im/photos-html/munich/munich-22.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+       
 }
 
 
 @media (max-width: 1312px) {
     .services {
         position: relative;
-        top: 100px; /* Adjust the value as needed */
+        top: 100px; 
     }
 }
 
 .services__card button:hover {
-    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+    background-color: var(--highlight-color); 
 }
 
 .services__card :nth-child(2) h2,
@@ -697,33 +697,33 @@ body {
     background-image: url('im/album\ 1-2.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+       
 }
 
 .services__card__music:nth-child(2) {
     background-image: url('im/album\ 1.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+       
 }
 
 .services__card__music:nth-child(3) {
     background-image: url('im/album\ 2-3.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+       
 }
 
 
 @media (max-width: 1312px) {
     .services__music {
         position: relative;
-        top: 100px; /* Adjust the value as needed */
+        top: 100px; 
     }
 }
 
 .services__card__music button:hover {
-    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+    background-color: var(--highlight-color); 
 }
 
 .services__card__music :nth-child(2) h2,
@@ -752,26 +752,26 @@ body {
 
 
 .services__card button:hover a {
-    color: white; /* Keep the text color white on hover */
+    color: white; 
 }
 
 .services__card button a:hover {
-    background: none; /* Prevent the background color change on hover */
+    background: none; 
 }
 
 .services__card__music button:hover a {
-    color: white; /* Keep the text color white on hover */
+    color: white; 
 }
 
 .services__card__music button a:hover {
-    background: none; /* Prevent the background color change on hover */
+    background: none; 
 }
 
 
 @media (max-width: 768px) {
 
     .fa-brands {
-        font-size: 25px; /* Change the size as needed */
+        font-size: 25px;
     }
 
     html, body {
@@ -779,13 +779,11 @@ body {
     }
     
     #nav-logo-section {
-        width: 50px; /* Set a fixed width */
-        /* OR */
-        padding: 15px;
+        width: 50px; 
+
     }
     #nav-links-section {
-        width: 40px; /* Set a fixed width */
-        /* OR */
+        width: 40px; 
     }
     
     #nav-social-section {
@@ -797,11 +795,11 @@ body {
 
 @media (max-width: 350px) {
     #nav-logo-section > a > i {
-        font-size: 2rem; /* Font size for smaller viewports */
+        font-size: 2rem; 
     }
 }
 @media (max-width: 300px) {
     #nav-logo-section > a > i {
-        font-size: 1rem; /* Font size for smaller viewports */
+        font-size: 1rem; 
     }
 }

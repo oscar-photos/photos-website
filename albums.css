@@ -123,14 +123,14 @@ nav .nav-section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: 1px; /* Adjust the margin as needed */
+    margin-top: 1px; 
 }
 
 .background-image img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures the image covers the entire div */
-    object-position: center; /* Centers the image */
+    object-fit: cover; 
+    object-position: center; 
 }
 .background-2-image img {
     width: 100%;
@@ -139,7 +139,7 @@ nav .nav-section {
     justify-content: center;
     align-items: center;
     overflow: hidden;
-    margin-top: -1vw; /* Increase the value to move the element up */
+    margin-top: -1vw; 
 }
 
 
@@ -230,7 +230,7 @@ h6 {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Adjust the width as needed */
+    width: 250px;
 }
 
 .menu-container {
@@ -263,7 +263,7 @@ h6 {
     background-color: var(--highlight-color);
 }
 
-/* Show the menu when the checkbox is checked */
+
 #menu-toggle:checked + .menu-icon + .menu {
     display: block;
 }
@@ -383,12 +383,12 @@ h4, h3,  p, a,li,label {
 @media (max-width: 1312px) {
     .services {
         position: relative;
-        top: 100px; /* Adjust the value as needed */
+        top: 100px; 
     }
 }
 
 .services__card button:hover {
-    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+    background-color: var(--highlight-color);
 }
 
 .services__card :nth-child(2) h2,
@@ -396,7 +396,7 @@ h4, h3,  p, a,li,label {
     color: #000;
 }
 
-                    /**/
+
 
 
 .music {
@@ -585,48 +585,48 @@ h4, h3,  p, a,li,label {
     background-image: url('im/photos-html/berlin/berlin-21.jpg' );
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+
 }
 
 .services__card__music:nth-child(2) {
     background-image: url('im/photos-html/coheed/coheed-06.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+    
 }
 
 .services__card__music:nth-child(3) {
     background-image: url('im/photos-html/dover/dover-10.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(4) {
     background-image: url('im/photos-html/dublin/dublin-107.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(5) {
     background-image: url('im/photos-html/epica/epica-06.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(6) {
     background-image: url('im/photos-html/ivinghoe/im\ 2.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 .services__card__music:nth-child(7) {
     background-image: url('im/photos-html/lake achensee/lake-21.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 
@@ -634,103 +634,103 @@ h4, h3,  p, a,li,label {
     background-image: url('im/photos-html/lb/london-91.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(9) {
     background-image: url('im/photos-html/london f/london-67.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(10) {
     background-image: url('im/photos-html/luxembourg/luxembourg-1.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(11) {
     background-image: url('im/photos-html/munich/munich-22.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(12) {
     background-image: url('im/photos-html/nightwish/nightwish-68.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(13) {
     background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(14) {
     background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(15) {
     background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(16) {
     background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(17) {
     background-image: url('im/photos-html/scotland/scotland-48.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(18) {
     background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(19) {
     background-image: url('im/photos-html/the warning/the warning-14.jpg');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 .services__card__music:nth-child(20) {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
-    /* Add other styles as needed */
+      
 }
 
 
 @media (max-width: 1312px) {
     .services__music {
         position: relative;
-        top: 100px; /* Adjust the value as needed */
+        top: 100px;    
     }
 }
 
 .services__card__music button:hover {
-    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
+    background-color: var(--highlight-color); 
 }
 
 .services__card__music :nth-child(2) h2,
@@ -766,9 +766,9 @@ html, body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh; /* Ensure it covers the full viewport height */
-    position: relative; /* Make it position relative */
-    z-index: 1; /* Adjust z-index as needed */
+    height: 100vh; 
+    position: relative; 
+    z-index: 1;
 }
 
 .services__container__music{
@@ -828,7 +828,7 @@ html, body {
 @media (max-width: 768px) {
 
     .fa-brands {
-        font-size: 25px; /* Change the size as needed */
+        font-size: 25px; 
     }
 
     html, body {
@@ -836,13 +836,11 @@ html, body {
     }
     
     #nav-logo-section {
-        width: 50px; /* Set a fixed width */
-        /* OR */
-        padding: 15px;
+        width: 50px; 
+        
     }
     #nav-links-section {
-        width: 40px; /* Set a fixed width */
-        /* OR */
+        width: 40px;
     }
     
     #nav-social-section {
@@ -854,12 +852,12 @@ html, body {
 
 @media (max-width: 350px) {
     #nav-logo-section > a > i {
-        font-size: 2rem; /* Font size for smaller viewports */
+        font-size: 2rem; 
     }
 }
 @media (max-width: 300px) {
     #nav-logo-section > a > i {
-        font-size: 1rem; /* Font size for smaller viewports */
+        font-size: 1rem; 
     }
 }
 
