@@ -74,6 +74,15 @@ nav .nav-section {
     z-index: 3;
 }
 
+.nav-menu {
+    
+    background-color: var(--background-color);
+    transition: background-color 0.3s ease; 
+}
+
+.menu ul li a:hover {
+    background-color: var(--highlight-color);
+}
 
 
 #nav-toggle-button:hover,
@@ -116,96 +125,17 @@ nav .nav-section {
     gap: 3rem;
 }
 
-.background-image {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 1px; /* Adjust the margin as needed */
-}
-
-.background-image img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image covers the entire div */
-    object-position: center; /* Centers the image */
-}
-.background-2-image img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: -1vw; /* Increase the value to move the element up */
-}
 
 
 
-h4 {
-    flex-basis: 50%;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5rem;
-    line-height: 3rem;
-    margin: 0px;
-    text-transform: uppercase;
-    color: white;
-}
-
-h3 {
-    flex-basis: 50%;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5rem;
-    line-height: 3rem;
-    margin: 0px;
-    text-transform: uppercase;
-    color: white;
-}
-
-h5 {
-    flex-basis: 50%;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3.5vw;
-    line-height: 3vw;
-    margin: 0px;
-    text-transform: uppercase;
-    color: black;
-}
-
-h6 {
-    flex-basis: 50%;
-    font-family: "Dela Gothic One", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 2.5vw;
-    line-height: 3vw;
-    margin: 0px;
-    text-transform: uppercase;
-    color: black;
-}
 
 
-.menu-container {
-    position: relative;
-}
 
 #menu-toggle {
     display: none;
 }
 
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    display: inline-block;
-}
+
 
 .menu {
     display: none;
@@ -216,7 +146,7 @@ h6 {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Adjust the width as needed */
+    width: 250px; 
 }
 
 .menu-container {
@@ -245,11 +175,9 @@ h6 {
     color: white;
 }
 
-.menu ul li a:hover {
-    background-color: var(--highlight-color);
-}
 
-/* Show the menu when the checkbox is checked */
+
+
 #menu-toggle:checked + .menu-icon + .menu {
     display: block;
 }
@@ -258,22 +186,13 @@ h4, h3,  p, a,li,label {
     user-select: none;
 }
 
-body {
-    overflow-x: hidden;
-}
+
 .menu ul li a {
     color: white;
 }
-body {
-    overflow-x: hidden;
-}
 
 
-@media (max-width: 768px) {
-    #nav-link-section {
-        display: none;
-    }
-}
+
 
 
 
@@ -290,74 +209,12 @@ body {
     color: #000;
     text-align: center;
 }
-.music-2 {
-    position: relative;
-    top: 1vw;
-    right: 0vw;
-    color: #000;
-    text-align: center;
-
-}
 
 
 
-.main__btn__music {
-    font-size: 1rem;
-    background-image: linear-gradient(to top, #363636 0%, #4d4a4a 100%);
-    padding: 14px 32px;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    margin-top: 2rem;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.35s;
-    top: 1vw;
-}
-
-.main__btn__music a {
-    position: relative;
-    z-index: 2;
-    color: #fff;
-    text-decoration: none;
-}
-
-.main__btn__music:after {
-    position: absolute;
-    content: '';
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: var(--highlight-color);
-    transition: all 0.35s;
-    border-radius: 4px;
-}
-
-.main__btn__music:hover {
-    color: #fff;
-}
-
-.main__btn__music:hover:after {
-    width: 100%;
-}
-@media screen and (max-width: 480px) {
-    .main__btn__music {
-        top: auto;
-        right: auto;
-    }
 
 
-}
 
-.services__music {
-    background: #171717;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
 
 
 
@@ -366,7 +223,7 @@ body {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: var(--backround-color);
+    background-color: var(--background-color);
 }
 
 
@@ -391,14 +248,7 @@ body {
     opacity: 0.2;
 }
 
-.services__card__music:nth-child(2) {
-    background-image: linear-gradient(
-            to bottom,
-            rgba(23, 23, 23, 0) 0%,
-            rgba(23, 23, 23, 0.9) 100%
-        ),
-        url('/images/pic4.jpg');
-}
+
 
 .services__card__music h2 {
     position: absolute;
@@ -428,12 +278,137 @@ body {
 
 .services__card__music button:hover {
     cursor: pointer;
+    background-color: var(--highlight-color);
+    color: white; 
+    background-color: var(--highlight-color);
+    transition: background-color 0.3s ease; 
 }
 
 .services__card__music:hover {
     transform: scale(1.075);
     transition: 0.2s ease-in;
     cursor: pointer;
+}
+
+
+.services {
+    background-color: #171717;
+}
+.services__card__music:nth-child(1) {
+    background-image: url('im/album\ 1-2.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.services__card__music:nth-child(2) {
+    background-image: url('im/album\ 1.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.services__card__music:nth-child(3) {
+    background-image: url('im/album\ 2-3.jpg');
+
+    background-size: cover;
+    background-position: center;
+    
+}
+
+
+
+
+
+
+.services__card__music :nth-child(2) h2,
+.services__card__music :nth-child(2) p {
+    color: #000;
+}
+
+
+
+
+.menu-icon:hover {
+    color: var(--highlight-color); 
+
+}
+
+
+
+
+.services__card button:hover a {
+    color: white; 
+}
+
+.services__card button a:hover {
+    background: none; 
+}
+
+
+
+.services__card__music button a:hover {
+    background: none; 
+}
+
+.services-btn-1 a,.services-btn-2 a,.services-btn-3 a {
+    color: inherit;
+    text-decoration: none;
+} 
+
+
+
+
+@media (max-width: 768px) {
+
+    .fa-brands {
+        font-size: 25px; 
+    }
+
+    
+    
+    #nav-logo-section {
+        width: 50px; 
+    }
+    #nav-links-section {
+        width: 40px; 
+    }
+    
+    #nav-social-section {
+        gap: 1rem;
+    }
+
+
+
+}
+
+@media (max-width: 350px) {
+    #nav-logo-section > a > i {
+        font-size: 2rem; 
+    }
+}
+@media (max-width: 300px) {
+    #nav-logo-section > a > i {
+        font-size: 1rem; 
+    }
+}
+
+@media (max-width: 1312px) {
+    .music {
+        margin-top: 125px
+    }
+}
+@media (max-width: 500px) {
+    .music {
+        margin-top: 150px
+    }
+}
+
+@media (max-width: 1312px) {
+    .services__music {
+        position: relative;
+        top: 100px;  
+    }
 }
 
 
@@ -461,119 +436,10 @@ body {
         width: 300px;
     }
 }
-.services {
-    background-color: #171717;
-}
-.services__card__music:nth-child(1) {
-    background-image: url('im/album\ 1-2.jpg');
-    background-size: cover;
-    background-position: center;
-    /* Add other styles as needed */
-}
-
-.services__card__music:nth-child(2) {
-    background-image: url('im/album\ 1.jpg');
-    background-size: cover;
-    background-position: center;
-    /* Add other styles as needed */
-}
-
-.services__card__music:nth-child(3) {
-    background-image: url('im/album\ 2-3.jpg');
-    
-    background-size: cover;
-    background-position: center;
-    /* Add other styles as needed */
-}
-
-
-@media (max-width: 1312px) {
-    .services__music {
-        position: relative;
-        top: 100px;  
-    }
-}
-
-.services__card__music button:hover {
-    background-color: var(--highlight-color); /* Example color: Change this to your desired color */
-}
-
-.services__card__music :nth-child(2) h2,
-.services__card__music :nth-child(2) p {
-    color: #000;
-}
-
-
-@media (max-width: 1312px) {
-    .music {
-        margin-top: 125px
-    }
-}
-@media (max-width: 500px) {
-    .music {
-        margin-top: 150px
-    }
-}
-
-.menu-icon:hover {
-    color: var(--highlight-color); 
-
-}
-
-
-
-
-.services__card button:hover a {
-    color: white; /* Keep the text color white on hover */
-}
-
-.services__card button a:hover {
-    background: none; /* Prevent the background color change on hover */
-}
-
-.services__card__music button:hover a {
-    color: white; /* Keep the text color white on hover */
-}
-
-.services__card__music button a:hover {
-    background: none; /* Prevent the background color change on hover */
-}
 
 
 @media (max-width: 768px) {
-
-    .fa-brands {
-        font-size: 25px; /* Change the size as needed */
-    }
-
-    html, body {
-        overflow-x: hidden;
-    }
-    
-    #nav-logo-section {
-        width: 50px; /* Set a fixed width */
-        /* OR */
-        padding: 15px;
-    }
-    #nav-links-section {
-        width: 40px; /* Set a fixed width */
-        /* OR */
-    }
-    
-    #nav-social-section {
-        gap: 1rem;
-    }
-
-
-}
-
-@media (max-width: 350px) {
-    #nav-logo-section > a > i {
-        font-size: 2rem; /* Font size for smaller viewports */
-    }
-}
-@media (max-width: 300px) {
-    #nav-logo-section > a > i {
-        font-size: 1rem; /* Font size for smaller viewports */
+    #nav-link-section {
+        display: none;
     }
 }

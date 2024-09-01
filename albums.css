@@ -855,13 +855,8 @@ html, body {
         font-size: 2rem; 
     }
 }
-@media (max-width: 300px) {
-    #nav-logo-section > a > i {
-        font-size: 1rem; 
-    }
-}
 
-@media (max-width: 523px){
+@media (max-width: 563px){
     .services__music{
         margin-top: 100px;
     }
