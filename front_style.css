@@ -321,6 +321,9 @@ body {
     position: relative;
     transition: all 0.35s;
     top: 1vw;
+    
+    
+    
 }
 
 .main__btn a {
@@ -482,7 +485,7 @@ body {
 }
 
 .services__card:nth-child(3) {
-    background-image: url('im/dofe\ peak\ district-60.jpg');
+    background-image: url('im/photos-html/munich/munich-22.jpg');
     background-size: cover;
     background-position: center;
     /* Add other styles as needed */
