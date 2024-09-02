@@ -237,7 +237,7 @@ h4, h3,  p, a,li,label {
     #nav-logo-section {
         width: 50px; 
     }
-    
+
     #nav-social-section {
         gap: 1rem;
     }
@@ -259,4 +259,3 @@ h4, h3,  p, a,li,label {
         font-size: 1.5rem; 
     }
 }
-
