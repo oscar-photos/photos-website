@@ -43,7 +43,7 @@ nav {
 }
 
 nav .nav-section {
-    padding: 2rem 2rem;
+    padding: 2rem ;
     display: flex;
     gap: 1rem;
     border-left: 1px solid var(--border-color);
@@ -74,8 +74,9 @@ nav .nav-section {
     z-index: 3;
 }
 
-
-
+.menu ul li a:hover {
+    background-color: var(--highlight-color);
+}
 
 #nav-mobile-section,
 #nav-contact-section { 
@@ -100,7 +101,6 @@ nav .nav-section {
 #nav-social-section {
     gap: 3rem;
 }
-
 
 .background-image img {
     width: 100%;
@@ -598,6 +598,19 @@ h4, h3,  p, a,li,label {
     .fa-brands {
         font-size: 25px;
     }
+
+
+    #nav-logo-section {
+        width: 50px; 
+    }
+
+    #nav-social-section {
+        gap: 1rem;
+    }
+
+    #nav-link-section {
+        display: none;
+    }
 }
 
 @media (max-width: 480px) {
@@ -661,6 +674,20 @@ h4, h3,  p, a,li,label {
         margin-top: 500px;
     }
     .main__btn__music {
-        margin-top: -20px;
+        margin-top: -10px;
+    }
+}
+
+
+@media (max-width: 450px) {
+    .nav-social-section {
+        gap: 0.25rem;
+    }
+
+}
+
+@media (max-width: 350px) {
+    #nav-logo-section > a > i {
+        font-size: 1rem; 
     }
 }
