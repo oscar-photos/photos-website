@@ -2,7 +2,7 @@
     --background-color: rgb(23, 23, 23);
     --border-color: rgb(255, 255, 255, 0.1);
     --highlight-color: rgb(0,139,139);
-    --yt-color: rgb(229, 57, 53);
+
 }
 
 body {
@@ -76,22 +76,7 @@ nav .nav-section {
 
 
 
-#nav-toggle-button:hover,
-#nav-toggle-button:hover > span {
-    color: var(--highlight-color);
-}
 
-#nav-toggle-button > span,
-#nav-toggle-button > i { 
-    display: inline-block;
-    height: 1rem;
-    line-height: 1rem;
-}
-
-#nav-social-section,
-#nav-contact-section { 
-    flex-grow: 1;
-}
 #nav-mobile-section,
 #nav-contact-section { 
     font-size: 2rem;
@@ -116,31 +101,14 @@ nav .nav-section {
     gap: 3rem;
 }
 
-.background-image {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: 1px; /* Adjust the margin as needed */
-}
 
 .background-image img {
     width: 100%;
     height: auto;
-    object-fit: cover; /* Ensures the image covers the entire div */
-    object-position: center; /* Centers the image */
+    object-fit: cover; 
+    object-position: center; 
 }
-.background-2-image img {
-    width: 100%;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-    margin-top: -1vw; /* Increase the value to move the element up */
-}
+
 
 
 
@@ -214,11 +182,6 @@ h6 {
     display: none;
 }
 
-.menu-icon {
-    font-size: 30px;
-    cursor: pointer;
-    display: inline-block;
-}
 
 .menu {
     display: none;
@@ -229,7 +192,7 @@ h6 {
     border: 1px solid var(--border-color);
     border-radius: 5px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 250px; /* Adjust the width as needed */
+    width: 250px; 
 }
 
 .menu-container {
@@ -243,13 +206,7 @@ h6 {
     margin: 0;
 }
 
-.menu ul li {
-    border-bottom: 1px solid #171717;
-}
 
-.menu ul li:last-child {
-    border-bottom: none;
-}
 
 .menu ul li a {
     display: block;
@@ -262,7 +219,7 @@ h6 {
     background-color: var(--highlight-color);
 }
 
-/* Show the menu when the checkbox is checked */
+
 #menu-toggle:checked + .menu-icon + .menu {
     display: block;
 }
@@ -271,22 +228,8 @@ h4, h3,  p, a,li,label {
     user-select: none;
 }
 
-body {
-    overflow-x: hidden;
-}
-.menu ul li a {
-    color: white;
-}
-body {
-    overflow-x: hidden;
-}
 
 
-@media (max-width: 768px) {
-    #nav-link-section {
-        display: none;
-    }
-}
 
 
 
@@ -345,21 +288,11 @@ body {
     border-radius: 4px;
 }
 
-.main__btn:hover {
-    color: #fff;
-}
 
 .main__btn:hover:after {
     width: 100%;
 }
-@media screen and (max-width: 480px) {
-    .main__btn {
-        top: auto;
-        right: auto;
-    }
 
-
-}
 
 .services {
     background: #131313;
@@ -384,29 +317,11 @@ body {
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(
-            to bottom,
-            rgba(23, 23, 23, 0) 0%,
-            rgba(23, 23, 23, 0.9) 100%
-        ),
-        url('/images/pic3.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
-.services__card:before {
-    opacity: 0.2;
-}
-
-.services__card:nth-child(2) {
-    background-image: linear-gradient(
-            to bottom,
-            rgba(23, 23, 23, 0) 0%,
-            rgba(23, 23, 23, 0.9) 100%
-        ),
-        url('/images/pic4.jpg');
-}
 
 .services__card h2 {
     position: absolute;
@@ -433,9 +348,6 @@ body {
     font-size: 1rem;
 }
 
-.services__card button:hover {
-    cursor: pointer;
-}
 
 .services__card:hover {
     transform: scale(1.075);
@@ -443,30 +355,7 @@ body {
     cursor: pointer;
 }
 
-@media screen and (max-width: 960px) {
-    .services {
-        height: 1600px;
-    }
 
-    .services h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services {
-        height: 1400px;
-    }
-
-    .services h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card {
-        width: 300px;
-    }
-}
 .services {
     background-color: #171717;
 }
@@ -491,24 +380,6 @@ body {
        
 }
 
-
-@media (max-width: 1312px) {
-    .services {
-        position: relative;
-        top: 100px; 
-    }
-}
-
-.services__card button:hover {
-    background-color: var(--highlight-color); 
-}
-
-.services__card :nth-child(2) h2,
-.services__card :nth-child(2) p {
-    color: #000;
-}
-
-                    /**/
 
 
 .music {
@@ -563,21 +434,11 @@ body {
     border-radius: 4px;
 }
 
-.main__btn__music:hover {
-    color: #fff;
-}
 
 .main__btn__music:hover:after {
     width: 100%;
 }
-@media screen and (max-width: 480px) {
-    .main__btn__music {
-        top: auto;
-        right: auto;
-    }
 
-
-}
 
 .services__music {
     background: #171717;
@@ -604,30 +465,13 @@ body {
     height: 525px;
     width: 400px;
     border-radius: 4px;
-    background-image: linear-gradient(
-            to bottom,
-            rgba(23, 23, 23, 0) 0%,
-            rgba(23, 23, 23, 0.9) 100%
-        ),
-        url('/images/pic3.jpg');
     background-size: cover;
     position: relative;
     color: #fff;
 }
 
 
-.services__card__music:before {
-    opacity: 0.2;
-}
 
-.services__card__music:nth-child(2) {
-    background-image: linear-gradient(
-            to bottom,
-            rgba(23, 23, 23, 0) 0%,
-            rgba(23, 23, 23, 0.9) 100%
-        ),
-        url('/images/pic4.jpg');
-}
 
 .services__card__music h2 {
     position: absolute;
@@ -655,9 +499,6 @@ body {
 }
 
 
-.services__card__music button:hover {
-    cursor: pointer;
-}
 
 .services__card__music:hover {
     transform: scale(1.075);
@@ -666,30 +507,7 @@ body {
 }
 
 
-@media screen and (max-width: 960px) {
-    .services__music {
-        height: 1600px;
-    }
 
-    .services__music h1 {
-        font-size: 2rem;
-        margin-top: 12rem;
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .services__music {
-        height: 1400px;
-    }
-
-    .services__music h1 {
-        font-size: 1.2rem;
-    }
-
-    .services__card__music {
-        width: 300px;
-    }
-}
 .services {
     background-color: #171717;
 }
@@ -715,33 +533,16 @@ body {
 }
 
 
-@media (max-width: 1312px) {
-    .services__music {
-        position: relative;
-        top: 100px; 
-    }
-}
+
 
 .services__card__music button:hover {
     background-color: var(--highlight-color); 
 }
 
-.services__card__music :nth-child(2) h2,
-.services__card__music :nth-child(2) p {
-    color: #000;
+.services__card button:hover {
+    background-color: var(--highlight-color); 
 }
 
-
-@media (max-width: 1312px) {
-    .music {
-        margin-top: 125px
-    }
-}
-@media (max-width: 500px) {
-    .music {
-        margin-top: 150px
-    }
-}
 
 .menu-icon:hover {
     color: var(--highlight-color); 
@@ -755,51 +556,111 @@ body {
     color: white; 
 }
 
-.services__card button a:hover {
-    background: none; 
-}
 
 .services__card__music button:hover a {
     color: white; 
 }
 
-.services__card__music button a:hover {
-    background: none; 
+
+
+
+
+
+
+@media (max-width: 1312px) {
+    .music, .services__music {
+        margin-top: 125px;
+    }
+    .services {
+        top: 100px;
+    }
 }
 
+@media (max-width: 960px) {
+    .services, .services__music {
+        height: 1600px;
+    }
+    .services h1, .services__music h1 {
+        font-size: 2rem;
+        margin-top: 12rem;
+    }
+}
 
 @media (max-width: 768px) {
-
+    #nav-link-section {
+        display: none;
+    }
+    .photography h4 {
+        font-size: 1.5rem; 
+        width: 90%;
+        margin: 0 auto;
+    }
     .fa-brands {
         font-size: 25px;
     }
+}
 
-    html, body {
-        overflow-x: hidden;
+@media (max-width: 480px) {
+    .main__btn, .main__btn__music {
+        top: auto;
+        right: auto;
     }
-    
-    #nav-logo-section {
-        width: 50px; 
-
+    .services, .services__music {
+        height: 1400px;
     }
-    #nav-links-section {
-        width: 40px; 
+    .services__card, .services__card__music {
+        width: 300px;
     }
-    
-    #nav-social-section {
-        gap: 1rem;
+    .services h1, .services__music h1 {
+        font-size: 1.2rem;
     }
-
-
 }
 
 @media (max-width: 350px) {
     #nav-logo-section > a > i {
-        font-size: 2rem; 
+        font-size: 2rem;
     }
 }
+
 @media (max-width: 300px) {
     #nav-logo-section > a > i {
-        font-size: 1rem; 
+        font-size: 1rem;
+    }
+}
+@media (max-width: 1295px) {
+    .services__music {
+        margin-top: 300px;
+    }
+    .services__container {
+        margin-top: 300px;
+    }
+    .music-2 {
+        margin-top: 150px;
+        margin: -5px;
+    }
+    .music {
+        margin-top: 300px;
+    }
+    .main__btn__music {
+        margin-top: -100px;
+    }
+}
+
+@media (max-width: 1048px) {
+    .services__music {
+        margin-top: 150px;
+    }
+    .services__container {
+        margin-top: 500px;
+    }
+    .music-2 {
+        margin-top: 150px;
+        margin: -5px;
+    }
+    .music {
+        margin-top: 500px;
+    }
+    .main__btn__music {
+        margin-top: -20px;
     }
 }
