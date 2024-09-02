@@ -659,21 +659,23 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(12) {
+    background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
+    background-size: cover;
+    background-position: center;
+
+    
+      
+}
+
+.services__card__music:nth-child(13) {
     background-image: url('im/photos-html/nightwish/nightwish-68.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(13) {
-    background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
-    background-size: cover;
-    background-position: center;
-      
-}
-
 .services__card__music:nth-child(14) {
-    background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
+    background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
     background-size: cover;
     background-position: center;
       
