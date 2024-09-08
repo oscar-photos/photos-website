@@ -287,144 +287,151 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(3) {
-    background-image: url('im/photos-html/coheed/coheed-06.jpg');
+    background-image: url('im/photos-html/Cesenatico/Cesenatico-10.jpg');
     background-size: cover;
     background-position: center;
     
 }
 
 .services__card__music:nth-child(4) {
+    background-image: url('im/photos-html/coheed/coheed-06.jpg');
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.services__card__music:nth-child(5) {
     background-image: url('im/photos-html/dover/dover-10.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(5) {
+.services__card__music:nth-child(6) {
     background-image: url('im/photos-html/dublin/dublin-107.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(6) {
+.services__card__music:nth-child(7) {
     background-image: url('im/photos-html/epica/epica-06.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(7) {
+.services__card__music:nth-child(8) {
     background-image: url('im/photos-html/innsbruck/innsbruck-9.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(8) {
+.services__card__music:nth-child(9) {
     background-image: url('im/photos-html/ivinghoe/im\ 2.jpg');
     background-size: cover;
     background-position: center;
       
 }
-.services__card__music:nth-child(9) {
+.services__card__music:nth-child(10) {
     background-image: url('im/photos-html/lake achensee/lake-21.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(10) {
+.services__card__music:nth-child(11) {
     background-image: url('im/photos-html/lb/london-91.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(11) {
+.services__card__music:nth-child(12) {
     background-image: url('im/photos-html/london f/london-67.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(12) {
+.services__card__music:nth-child(13) {
     background-image: url('im/photos-html/luxembourg/luxembourg-1.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(13) {
+.services__card__music:nth-child(14) {
     background-image: url('im/photos-html/munich/munich-22.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(14) {
+.services__card__music:nth-child(15) {
     background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.services__card__music:nth-child(15) {
+.services__card__music:nth-child(16) {
     background-image: url('im/photos-html/nightwish/nightwish-68.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(16) {
+.services__card__music:nth-child(17) {
     background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(17) {
+.services__card__music:nth-child(18) {
     background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(18) {
+.services__card__music:nth-child(19) {
     background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(19) {
+.services__card__music:nth-child(20) {
     background-image: url('im/photos-html/scotland/scotland-48.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(20) {
+.services__card__music:nth-child(21) {
     background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(21) {
+.services__card__music:nth-child(22) {
     background-image: url('im/photos-html/venice/venice-9.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(22) {
+.services__card__music:nth-child(23) {
     background-image: url('im/photos-html/the warning/the warning-14.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(23) {
+.services__card__music:nth-child(24) {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
