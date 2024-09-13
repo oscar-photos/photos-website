@@ -404,34 +404,50 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(20) {
-    background-image: url('im/photos-html/scotland/scotland-48.jpg');
+    background-image: url('im/photos-html/rimini/rimini-6.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(21) {
-    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
+    background-image: url('im/photos-html/san marino/san\ marino-3.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(22) {
-    background-image: url('im/photos-html/venice/venice-9.jpg');
+    background-image: url('im/photos-html/scotland/scotland-48.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(23) {
+    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
+    background-size: cover;
+    background-position: center;
+      
+}
+
+
+
+.services__card__music:nth-child(24) {
+    background-image: url('im/photos-html/venice/venice-9.jpg');
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.services__card__music:nth-child(25) {
     background-image: url('im/photos-html/the warning/the warning-14.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
-.services__card__music:nth-child(24) {
+.services__card__music:nth-child(26) {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
