@@ -273,11 +273,12 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(1) {
-    background-image: url('im/photos-html/acquacheta waterfall/Acquacheta Waterfall-20.jpg' );
+    background-image: url('im/photos-html/Acquacheta Waterfall/Acquacheta Waterfall-20.jpg' );
     background-size: cover;
     background-position: center;
 
 }
+
 
 .services__card__music:nth-child(2) {
     background-image: url('im/photos-html/berlin/berlin-21.jpg' );
