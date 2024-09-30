@@ -462,27 +462,34 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(28) {
-    background-image: url('im/photos-html/venice/venice-9.jpg');
+    background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(29) {
-    background-image: url('im/photos-html/vernazza/vernazza-9.jpg');
+    background-image: url('im/photos-html/Täsch/Täsch-13.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(30) {
-    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-image: url('im/photos-html/vernazza/vernazza-9.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(31) {
+    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.services__card__music:nth-child(32) {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
