@@ -483,13 +483,20 @@ h4, h3,  p, a,li,label {
 }
 
 .services__card__music:nth-child(31) {
-    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-image: url('im/photos-html/visions of atlantis/voa-58.jpg');
     background-size: cover;
     background-position: center;
       
 }
 
 .services__card__music:nth-child(32) {
+    background-image: url('im/photos-html/the warning/the warning-14.jpg');
+    background-size: cover;
+    background-position: center;
+      
+}
+
+.services__card__music:nth-child(33) {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
