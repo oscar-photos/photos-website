@@ -3,8 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
     <title>Oscar</title>
     <link rel="stylesheet" href="front_style.css">
+
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
@@ -12,51 +18,50 @@
 </head>
 <body>
 
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="#">
+    <div id="nav-placeholder"></div>
+    <script>
+        // load the menu with changes
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
 
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
                 
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="#">WELCOME TO MY WEBSITE</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf?si=bTeMvprtQR-ppA2pW-xK6w">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <style>
-                            .nav-contact-section{
-                                width: 50px; 
-                                height: 50px; 
-                                
-                            }
-                        </style>
-                        <ul>
-                            <li><a href="albums.html">Photography</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="https://github.com/oscar-photos/photos-website/issues">Bugs/Issues</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+                const linkSection = tempDiv.querySelector('#nav-link-section');
+                if (linkSection) {
+                    linkSection.innerHTML = '<a href="#">WELCOME TO MY WEBSITE</a>';
+                }
+                
+                const contactSection = tempDiv.querySelector('#nav-contact-section');
+                if (contactSection) {
+                    contactSection.innerHTML = `
+                        <div class="menu-container">
+                            <input type="checkbox" id="menu-toggle">
+                            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+                            <nav class="menu">
+                                <style>
+                                    .nav-contact-section{
+                                        width: 50px;
+                                        height: 50px;
+                                    }
+                                </style>
+                                <ul>
+                                    <li><a href="albums.html">Photography</a></li>
+                                    <li><a href="music.html">Music</a></li>
+                                    <li><a href="https://github.com/oscar-photos/photos-website/issues">Bugs/Issues</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    `;
+                }
+                
+                document.getElementById('nav-placeholder').innerHTML = tempDiv.innerHTML;
+            })
+            .catch(error => {
+                console.error('Error loading navigation:', error);
+            });
+    </script>
 
         
         

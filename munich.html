@@ -3,7 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Munich 2024</title>
+    <title>Munich</title>
+    <meta name="keywords" content="Munich, travel, photography, Eisbachwelle, Justizpalast, Nymphenburg Palace, surfing, law library, Germany">
+    <meta name="description" content=" Munich of  beautiful photos captured during my europe trip. Visit landmarks like the Justizpalast, Nymphenburg Palace, and the Eisbachwelle for surfing.">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
+
     <link rel="stylesheet" href="gallery.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,42 +20,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html">Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     <style>
         .gallery {
             margin-top: 100px;  
@@ -58,8 +39,27 @@
         <body>
             <div class="title">
                 <br><br>
-                <h4 style="text-align: center;">Munich 2024</h4><br><br>
-                <h2 style="text-align: center;"> I was in Munich for  the evening of day 2 and the whole of day 3  <br> I got to go on a tour of the  <a href="#library"> Juristische Bibliothek (law library)  see here </a> <br> I also saw people surfing in  <a href="#surfer"> Eisbachwelle river  see here </a>  as well as the regular shots of munich <br> these are the photos which were taken on my Fujifilm xt-1 and a 50-230mm F4.5 lens </h2>               
+                <h4 style="text-align: center;">Munich</h4><br><br>
+                <h2 style="text-align: center;">
+                    I was in Munich for the evening of day 2 and the whole of day 3 
+                    <span class="break-900"><br></span> 
+                    I got to go on a tour of the 
+                    <a href="#library">Juristische Bibliothek (law library) see here</a> 
+                    <span class="break-900"><br></span> 
+                    I also saw people surfing in 
+                    <a href="#surfer">Eisbachwelle river see here</a> 
+                    <span class="break-900"><br></span> 
+                    These are the photos which were taken on my Fujifilm xt-1 and a 50-230mm F4.5 lens
+                </h2>
+
+                                
+                <span class="break-desktop"><br><br></span>
+                <h2 class="navigation-text">
+                    <span class="previous">Previous: <a href="luxembourg.html">Luxembourg</a></span>
+                    <span class="day-info">Day 2-3: Munich</span>
+                    <span class="next">Next: <a href="Neuschwanstein.html">Neuschwanstein Castle</a></span>
+                </h2>
+                <span class="break-desktop"><br><br></span>
             </div>
             <div class="container">
 
@@ -164,10 +164,6 @@
                 <a data-lightbox="homePortfolio" class="vertical">
                     <img src="im/photos-html/munich/munich-3.jpg" alt="Justizpalast "/>
                 </a>
-
-
-
-
 
                 <a data-lightbox="homePortfolio" class="vertical">
                     <img src="im/photos-html/munich/munich-10.jpg" alt="Old Town Hall"/>
@@ -417,17 +413,6 @@
                     <img src="im/photos-html/munich/surfers/surfers-36.jpg" alt="Eisbachwelle surfers"/>
                 </a>
 
-
-
-
-
-
-
-
-
-
-
-
             
                 <a data-lightbox="homePortfolio" class="horizontal">
                     <img src="im/photos-html/munich/surfers/surfers-13.jpg" alt="Eisbachwelle surfers"/>
@@ -483,11 +468,20 @@
                     <img src="im/photos-html/munich/surfers/surfers-42.jpg" alt="Eisbachwelle surfers"/>
                 </a>
 
-            
-
-            
-
             </div>
+
+            <div class="lightbox">
+                <div class="lightbox-nav">
+                    <a href="#" class="prev">Previous</a>
+                    <a href="#" class="index">1/1</a>  
+                    <a href="#" class="next">Next</a>
+                </div>
+                <div class="lightbox-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
         </body>
     </html>
 </head>

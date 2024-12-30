@@ -10,7 +10,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    margin: 0px;
+
     overflow-x: hidden; 
     margin: 0;
     padding: 0;

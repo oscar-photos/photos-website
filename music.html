@@ -4,6 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Oscar's Music</title>
+    <meta name="description" content="Oscar's Music - Explore a variety of music including orchestral, dungeon synth, and more. Listen to the latest tracks.">
+    <meta name="keywords" content="Oscar's Music, orchestral music, dungeon synth, demo, music, listen, music tracks">
+    <meta name="author" content="oscar_photography__">
+    
+
     <link rel="stylesheet" href="music.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,46 +19,29 @@
 </head>
 <body>
 
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load and modify the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                // Create a temporary container
+                const tempDiv = document.createElement('div');
+                tempDiv.innerHTML = data;
                 
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="#">music</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>   
+                // Find and modify the nav-link-section
+                const linkSection = tempDiv.querySelector('#nav-link-section');
+                if (linkSection) {
+                    linkSection.innerHTML = '<a href="#">music</a>';
+                }
                 
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf?si=bTeMvprtQR-ppA2pW-xK6w">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="albums.html">Photography</a></li>
-                            
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
+                // Insert the modified navigation
+                document.getElementById('nav-placeholder').innerHTML = tempDiv.innerHTML;
+            })
+            .catch(error => {
+                console.error('Error loading navigation:', error);
+            });
+    </script>
 
         <button id="nav-toggle-button" type="button" onclick="handleNavToggle()">
             <span>Menu</span>

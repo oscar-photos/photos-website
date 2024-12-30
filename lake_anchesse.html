@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lake Anchesse</title>
+    <meta name="description" content="A photo gallery of Lake Achensee.  Captured with Fujifilm XT-1 and a 50-230mm F4.5 lens.">
+    <meta name="keywords" content="Lake Achensee, Travel Photography, Nature, Scenic Views, Mountains, Landscape Photos">
+    
+
     <link rel="stylesheet" href="gallery.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,42 +16,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html">Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     <style>
         .gallery {
             margin-top: 100px;  
@@ -58,7 +35,8 @@
         <body>
             <div class="title">
                 <br><br>
-                <h4 style="text-align: center;" class="lake">Lake Anchesse</h4><br><br>
+                <h4 style="text-align: center;" class="lake">Lake Achensee</h4>
+                <br><br>
                 <style>
                     @media (max-width: 750px) {
                         .lake {
@@ -67,10 +45,24 @@
                         }
                     }
                 </style>
-                <h2 style="text-align: center;"> I went to lake Anchesse on the evening of day 4  and morning of day 5 we were supposed to stay for the whole of day <br>  but in the evening it started raining very heavily so I decided to move on in the morning and go to venice instead   <br>  these are the photos which were taken on my Fujifilm xt-1 and a 50-230mm F4.5 lens</h2>
-                <br><br>
-                
+                <h2 style="text-align: center;">
+                    I went to Lake Achensee on the evening of day 4 and the morning of day 5. 
+                    <span class="break-900"><br></span>
+                    We were supposed to stay for the whole day, 
+                    <span class="break-900"><br></span>
+                    but in the evening, it started raining very heavily, so I decided to move on in the morning and go to Venice instead.
+                    <span class="break-900"><br></span>
+                    These are the photos which were taken on my Fujifilm XT-1 and a 50-230mm F4.5 lens.
+                </h2>
+                <span class="break-desktop"><br><br></span>
+                <h2 class="navigation-text">
+                    <span class="previous">Previous: <a href="Neuschwanstein.html">Neuschwanstein Castle</a></span>
+                    <span class="day-info">Day 4-5: Lake Achensee</span>
+                    <span class="next">Next: <a href="innsbruck.html">Innsbruck</a></span>
+                </h2>
+                <span class="break-desktop"><br><br></span>
             </div>
+            
         <div class="container">
         </div>
         <div class="container">
@@ -122,12 +114,6 @@
             </a>
 
 
-
-
-
-
-
-
             <a data-lightbox="homePortfolio" class="vertical">
                 <img src="im/photos-html/lake achensee/lake-1.jpg" alt="church" />
             </a>
@@ -136,8 +122,6 @@
             <a data-lightbox="homePortfolio" class="horizontal">
                 <img src="im/photos-html/lake achensee/lake-2.jpg" alt="lake view" />
             </a>
-
-
 
 
             <a data-lightbox="homePortfolio" class="horizontal">
@@ -161,14 +145,6 @@
                 <img src="im/photos-html/lake achensee/lake-12.jpg" alt="forest path" />
             </a>
 
-
-
-
-
-
-
-
-
             <a data-lightbox="homePortfolio" class="vertical">
                 <img src="im/photos-html/lake achensee/lake-22.jpg" alt="kayaking on lake" />
             </a>
@@ -180,7 +156,18 @@
                 <img src="im/photos-html/lake achensee/lake-4.jpg" alt="sunset over lake" />
             </a>
 
-            
+            <div class="lightbox">
+                <div class="lightbox-nav">
+                    <a href="#" class="prev">Previous</a>
+                    <a href="#" class="index">1/1</a>  
+                    <a href="#" class="next">Next</a>
+                </div>
+                <div class="lightbox-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
 
 
             

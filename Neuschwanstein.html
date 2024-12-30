@@ -3,7 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Neuschwanstein  Castle 2024</title>
+    <title>Neuschwanstein  Castle</title>
+    <meta name="description" content=" Neuschwanstein Castle located in the Bavarian Alps. View  photos taken on a Fujifilm XT-1 camera during a visit to this iconic landmark.">
+    <meta name="keywords" content="Neuschwanstein Castle, Bavarian Alps, photography, Fujifilm XT-1, travel, castle, Germany">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
     <link rel="stylesheet" href="gallery.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,42 +20,15 @@
     </style>
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html">Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     <style>
         .gallery {
             margin-top: 100px;  
@@ -61,7 +41,8 @@
         <body>
             <div class="title">
                 <br><br>
-                <h4 style="text-align: center;" class="castle">Neuschwanstein  Castle</h4><br><br>
+                <h4 style="text-align: center;" class="castle">Neuschwanstein Castle</h4>
+                <br><br>
                 <style>
                     @media (max-width: 750px) {
                         .castle {
@@ -70,13 +51,22 @@
                         }
                     }
                 </style>
-                
-                <h2 style="text-align: center;"> On day 4 I stopped by Neuschwanstein  Castle on the way to lake Achensee.    <br>  Neuschwanstein Castle is a 19th century castle 800 meters up into the alps and was the inspiration to the castle in Disneyland  <br> these are the photos which were taken on my Fujifilm xt-1 and a 50-230mm F4.5 lens </h2>
-                <br><br>
-                
+                <h2 style="text-align: center;">
+                    On day 4, I stopped by Neuschwanstein Castle on the way to Lake Achensee.
+                    <span class="break-900"><br></span>
+                    Neuschwanstein Castle is a 19th-century castle 800 meters up into the Alps and was the inspiration for the castle in Disneyland.
+                    <span class="break-900"><br></span>
+                    These are the photos which were taken on my Fujifilm XT-1 and a 50-230mm F4.5 lens.
+                </h2>
+                <span class="break-desktop"><br><br></span>
+                <h2 class="navigation-text">
+                    <span class="previous">Previous: <a href="munich.html">Munich</a></span>
+                    <span class="day-info">Day 4: Neuschwanstein Castle</span>
+                    <span class="next">Next: <a href="lake_anchesse.html">lake Anchesse</a></span>
+                </h2>
+                <span class="break-desktop"><br><br></span>
             </div>
-            <div class="container">
-            </div>
+            
             <div class="container">
 
                 <a data-lightbox="homePortfolio" class="big">
@@ -245,6 +235,20 @@
                 
 
             </div>
+
+            <div class="lightbox">
+                <div class="lightbox-nav">
+                    <a href="#" class="prev">Previous</a>
+                    <a href="#" class="index">1/1</a>  
+                    <a href="#" class="next">Next</a>
+                </div>
+                <div class="lightbox-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
+            
         </body>
     </html>
 </head>

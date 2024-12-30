@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vernazza</title>
+    <meta name="description" content="Photos from Vernazza, one of the picturesque villages in the Cinque Terre, Italy. A part of my Europe trip, taken with a Fujifilm XT-1.">
+    <meta name="keywords" content="Vernazza, Cinque Terre, Italy, Europe trip, Fujifilm XT-1, photography, travel, sea, gelato, Italian village">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
     <link rel="stylesheet" href="gallery.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,42 +19,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html">Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     <style>
         .gallery {
             margin-top: 100px;  
@@ -58,9 +38,26 @@
         <body>
             <div class="title">
                 <br><br>
-                <h4 style="text-align: center;">Vernazza </h4><br><br>
-                <h2 style="text-align: center;"> I went to Vernazza on the 11th day of my europe trip <br> I went in the afternoon when it was really hot and we had to walk down to the town <br>when i was there is swam in the sea which was crystal clear and had gelato<br> these are the photos which were taken on my Fujifilm xt-1 and a 50-230mm F4.5 lens  </h2>
+                <h4 style="text-align: center;">Vernazza</h4>
+                <br><br>
+                <h2 style="text-align: center;">
+                    I went to Vernazza on the 11th day of my Europe trip. 
+                    <span class="break-900"><br></span>
+                    I visited in the afternoon when it was really hot, and we had to walk down to the town. 
+                    <span class="break-900"><br></span>
+                    While I was there, I swam in the sea, which was crystal clear, and had some gelato. 
+                    <span class="break-900"><br></span>
+                    These are the photos which were taken on my Fujifilm XT-1 and a 50-230mm F4.5 lens.
+                </h2>
+                <span class="break-desktop"><br><br></span>
+                <h2 class="navigation-text">
+                    <span class="previous">Previous: <a href="florance.html">Florance</a></span>
+                    <span class="day-info">Day 11: Vernazza</span>
+                    <span class="next">Next: <a href="rapallo.html">Rapallo</a></span>
+                </h2>
+                <span class="break-desktop"><br><br></span>
             </div>
+            
             <div class="container">
 
                 <a data-lightbox="homePortfolio" class="big">
@@ -131,16 +128,10 @@
                 <a data-lightbox="homePortfolio" class="vertical">
                     <img src="im/photos-html/vernazza/vernazza-12.jpg" alt="vernazza"/>
                 </a>
-                
-                
-                
-                
-                
-                
+
                 <a data-lightbox="homePortfolio" class="vertical">
                     <img src="im/photos-html/vernazza/vernazza-22.jpg" alt="vernazza"/>
                 </a>
-
 
 
                 <a data-lightbox="homePortfolio" class="vertical">
@@ -156,20 +147,25 @@
                 <a data-lightbox="homePortfolio" class="vertical">
                     <img src="im/photos-html/vernazza/vernazza-6.jpg" alt="vernazza"/>
                 </a>
-                
-                
-                
-                
+
                 <a data-lightbox="homePortfolio" class="horizontal">
                     <img src="im/photos-html/vernazza/vernazza-11.jpg" alt="vernazza"/>
                 </a>
-                
-                
-                
-                
-                
+
 
             </div>
+            <div class="lightbox">
+                <div class="lightbox-nav">
+                    <a href="#" class="prev">Previous</a>
+                    <a href="#" class="index">1/1</a>  
+                    <a href="#" class="next">Next</a>
+                </div>
+                <div class="lightbox-content">
+                    <span class="close-btn">&times;</span>
+                    <img src="" alt="">
+                </div>
+            </div>
+            <script src="gallery.js"></script>
         </body>
     </html>
 </head>

@@ -148,47 +148,7 @@ h6 {
     color: var(--highlight-color);
 }
 
-#menu-toggle {
-    display: none;
-}
 
-.menu {
-    display: none;
-    position: absolute;
-    top: 100px;
-    right: -100px;
-    background-color: #171717;
-    border: 1px solid var(--border-color);
-    border-radius: 5px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 250px;
-}
-
-.menu-container {
-    position: relative;
-    color: white;
-}
-
-.menu ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.menu ul li a {
-    display: block;
-    padding: 10px;
-    text-decoration: none;
-    color: white;
-}
-
-.menu ul li a:hover {
-    background-color: var(--highlight-color);
-}
-
-#menu-toggle:checked + .menu-icon + .menu {
-    display: block;
-}
 
 h4, h3,  p, a,li,label {
     user-select: none;
@@ -212,15 +172,17 @@ h4, h3,  p, a,li,label {
     cursor: pointer;
 }
 
-.menu-icon:hover {
-    color: var(--highlight-color); 
-}
+
 
 .services__container__music {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     background-color: var(--backround-color);
+    position: absolute;
+    top: -10vw;
+    left: 0;
+    right: 0;
 }
 
 .services__card__music {
@@ -272,236 +234,374 @@ h4, h3,  p, a,li,label {
     background-color: var(--highlight-color); 
 }
 
-.services__card__music:nth-child(1) {
-    background-image: url('im/photos-html/Acquacheta Waterfall/Acquacheta Waterfall-9.jpg' );
-    background-size: cover;
-    background-position: center;
-
+.services__music {
+    position: absolute;
+    top: 17vw;
+    left: 0;
+    right: 0;
 }
 
 
-.services__card__music:nth-child(2) {
-    background-image: url('im/photos-html/berlin/berlin-21.jpg' );
-    background-size: cover;
-    background-position: center;
-
+#search-input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid var(--border-color);
+    background-color: var(--background-color);
+    color: white;
+    flex-grow: 1;
+    border-radius: 5px;
 }
 
-.services__card__music:nth-child(3) {
+#search-input:focus {
+    outline: none;
+    border-color: var(--highlight-color);
+}
+
+
+
+.search-bar {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    position: relative;
+}
+
+.no-results {
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    height: 525px;
+    margin-top: 125px;
+}
+
+.no-results .placeholder {
+    text-align: center;
+}
+
+.no-results .question-mark {
+    font-size: 4rem;
+    color: var(--highlight-color);
+}
+
+.no-results p {
+    font-size: 1.2rem;
+}
+.bar-container {
+    gap: 10px;
+}
+
+.search-bar-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 30px 0 20px;
+    padding: 0 10px;
+}
+
+    
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background-color: var(--background-color);
+    color: white;
+}
+
+select {
+    width: 300px;
+    padding: 9px;
+    font-size: 16px;
+    border: 1px solid var(--border-color);
+    border-radius: 4px;
+
+    background-color: var(--background-color);
+    color: white;
+}
+
+select:focus {
+    border-color: var(--highlight-color);
+
+    outline: none;
+}
+
+optgroup {
+    color: inherit;
+    background-color: var(--background-color);
+}
+
+optgroup[label="Year"] {
+    color: var(--highlight-color);
+}
+
+optgroup[label="Countries"] {
+    color: var(--highlight-color);
+}
+
+option {
+    background-color: inherit;
+    color: white; /* White */
+}
+
+optgroup option {
+    background-color: inherit;
+    color: white; /* White */
+}
+
+.services__card__music[data-id="1"] {
+    background-image: url('im/photos-html/Acquacheta Waterfall/Acquacheta Waterfall-9.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="2"] {
+    background-image: url('im/photos-html/amsterdam/amsterdam-23.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="3"] {
+    background-image: url('im/photos-html/berlin/berlin-21.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="4"] {
     background-image: url('im/photos-html/bologna/bologna-9.jpg');
     background-size: cover;
     background-position: center;
-    
 }
 
-.services__card__music:nth-child(4) {
+.services__card__music[data-id="5"] {
     background-image: url('im/photos-html/Cesenatico/Cesenatico-10.jpg');
     background-size: cover;
     background-position: center;
-    
 }
 
-.services__card__music:nth-child(5) {
+.services__card__music[data-id="6"] {
     background-image: url('im/photos-html/coheed/coheed-06.jpg');
     background-size: cover;
     background-position: center;
-    
 }
 
-.services__card__music:nth-child(6) {
+.services__card__music[data-id="7"] {
+    background-image: url('im/photos-html/cologne/cologne-23.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="8"] {
     background-image: url('im/photos-html/dover/dover-10.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(7) {
+.services__card__music[data-id="9"] {
     background-image: url('im/photos-html/dublin/dublin-107.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(8) {
+.services__card__music[data-id="10"] {
     background-image: url('im/photos-html/epica/epica-06.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(9) {
+.services__card__music[data-id="11"] {
+    background-image: url('im/photos-html/ferry/ferry-4.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="12"] {
     background-image: url('im/photos-html/florence/florence-21.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(10) {
+.services__card__music[data-id="13"] {
     background-image: url('im/photos-html/innsbruck/innsbruck-9.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(11) {
-    background-image: url('im/photos-html/ivinghoe/im\ 2.jpg');
+.services__card__music[data-id="14"] {
+    background-image: url('im/photos-html/ivinghoe/im 2.jpg');
     background-size: cover;
     background-position: center;
-      
 }
-.services__card__music:nth-child(12) {
+
+.services__card__music[data-id="15"] {
+    background-image: url('im/photos-html/kamalot/kamalot-13.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="16"] {
     background-image: url('im/photos-html/lake achensee/lake-21.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(13) {
+.services__card__music[data-id="17"] {
+    background-image: url('im/photos-html/Lauterbrunnen/lauterbrunnen-33.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="18"] {
     background-image: url('im/photos-html/lb/london-91.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(14) {
+.services__card__music[data-id="19"] {
     background-image: url('im/photos-html/london f/london-67.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(15) {
+.services__card__music[data-id="20"] {
     background-image: url('im/photos-html/luxembourg/luxembourg-1.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(16) {
+.services__card__music[data-id="21"] {
     background-image: url('im/photos-html/munich/munich-22.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(17) {
-    background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein\ Castle-5.jpg');
+.services__card__music[data-id="22"] {
+    background-image: url('im/photos-html/Neuschwanstein/Neuschwanstein Castle-5.jpg');
     background-size: cover;
     background-position: center;
 }
 
-.services__card__music:nth-child(18) {
+.services__card__music[data-id="23"] {
     background-image: url('im/photos-html/nightwish/nightwish-68.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(19) {
-    background-image: url('im/photos-html/Nottingham/nottingham\ 5.jpg');
+.services__card__music[data-id="24"] {
+    background-image: url('im/photos-html/Nottingham/nottingham 5.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(20) {
+.services__card__music[data-id="25"] {
+    background-image: url('im/photos-html/oxford/oxford-1.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="26"] {
     background-image: url('im/photos-html/ilam/dofe peak district-73.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(21) {
+.services__card__music[data-id="27"] {
     background-image: url('im/photos-html/pisa/pisa-9.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-
-.services__card__music:nth-child(22) {
+.services__card__music[data-id="28"] {
     background-image: url('im/photos-html/r+ dublin/20240623_220415.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(23) {
+.services__card__music[data-id="29"] {
     background-image: url('im/photos-html/rapallo/rapallo-2.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(24) {
+.services__card__music[data-id="30"] {
     background-image: url('im/photos-html/rimini/rimini-6.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(25) {
-    background-image: url('im/photos-html/san marino/san\ marino-3.jpg');
+.services__card__music[data-id="31"] {
+    background-image: url('im/photos-html/san marino/san marino-3.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(26) {
+.services__card__music[data-id="32"] {
     background-image: url('im/photos-html/scotland/scotland-48.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(27) {
+.services__card__music[data-id="33"] {
     background-image: url('im/photos-html/seb lowe/seb lowe-09.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(28) {
+.services__card__music[data-id="34"] {
+    background-image: url('im/photos-html/strasbourg/strasbourg-16.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="35"] {
     background-image: url('im/photos-html/Täsch/Täsch-13.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(29) {
+.services__card__music[data-id="36"] {
     background-image: url('im/photos-html/venice/venice-9.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(30) {
+.services__card__music[data-id="37"] {
     background-image: url('im/photos-html/vernazza/vernazza-9.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(31) {
+.services__card__music[data-id="38"] {
     background-image: url('im/photos-html/visions of atlantis/voa-58.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(32) {
+.services__card__music[data-id="39"] {
     background-image: url('im/photos-html/the warning/the warning-14.jpg');
     background-size: cover;
     background-position: center;
-      
 }
 
-.services__card__music:nth-child(33) {
+.services__card__music[data-id="40"] {
     background-image: url('im/photos-html/woburn snands music/sequel/sequel-1.JPG');
     background-size: cover;
     background-position: center;
-      
 }
+
+.services__card__music[data-id="41"] {
+    background-image: url('im/photos-html/zermatt/zermatt-21.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.services__card__music[data-id="42"] {
+    background-image: url('im/photos-html/zutphen/zutphen-2.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
 
 @media (max-width: 768px) {
     .fa-brands {
@@ -559,8 +659,27 @@ h4, h3,  p, a,li,label {
     }
 }
 
-@media (max-width: 322px){
+@media (max-width: 600px){
     .services__music{
-        margin-top: 100px;
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 1265px) {
+    .services__container__music {
+        top: -2vw; 
+    }
+}
+
+@media (max-width: 768px) {
+    .search-bar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px; 
+    }
+
+    #search-input, .filter-section select {
+        width: 100%; 
+        border-radius: 5px; 
     }
 }

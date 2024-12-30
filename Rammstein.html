@@ -4,6 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rammstein 2024</title>
+    <meta name="description" content="Photos from Rammstein's concert at RDS Arena Dublin on 23rd June 2024, featuring incredible shots from the Feuerzone.">
+    <meta name="keywords" content="Rammstein, Dublin 2024, RDS Arena, concert, Abelard, Feuerzone, live music, photos, Rammstein 2024">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
     <link rel="stylesheet" href="gallery.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,42 +19,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
-        </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html" >Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-        </div>
-    </nav>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
     <style>
         .gallery {
             margin-top: 100px;  
@@ -594,7 +574,18 @@
                     <img src="im/photos-html/r+ dublin/rammstein-123.jpg" alt="Rammstein"/>
                 </a>
 
-            
+                <div class="lightbox">
+                    <div class="lightbox-nav">
+                        <a href="#" class="prev">Previous</a>
+                        <a href="#" class="index">1/1</a>  
+                        <a href="#" class="next">Next</a>
+                    </div>
+                    <div class="lightbox-content">
+                        <span class="close-btn">&times;</span>
+                        <img src="" alt="">
+                    </div>
+                </div>
+                <script src="gallery.js"></script>
                 
             </div> 
         </body>

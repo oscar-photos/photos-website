@@ -4,7 +4,15 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leighton Buzzard 2024</title>
+    <meta name="description" content=" photos of Leighton Buzzard taken with a Canon 1000D and a 28-200mm F4.5 lens.">
+    <meta name="keywords" content="Leighton Buzzard, photography, Canon 1000D, 28-200mm lens, landscapes, architecture, nature">
+    <meta name="description" content="Oscar's Photography and Music Portfolio - Featuring photo albums, music releases, and more."> 
+    <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
+    <meta name="robots" content="index, follow"> 
+    <meta name="author" content="oscar_photography__">
+
     <link rel="stylesheet" href="gallery.css">
+    <script src="gallery.js"></script>
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,151 +20,108 @@
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav data-toggled="false" data-transitionable="false">
-        <div id="nav-logo-section" class="nav-section">
-            <a href="index.html">
-                <i class="fa-solid fa-house"></i>
-            </a>
+    <div id="nav-placeholder"></div>
+    <script>
+        // Load the navigation menu
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('nav-placeholder').innerHTML = data;
+            });
+    </script>
+    
+    <div class="title">
+        <br><br>
+        <h4>Leighton Buzzard 2024</h4><br><br>
+        <h2>I brought my camera to Leighton Buzzard<br>these are the photos which were taken on my canon 1000d and a 28-200mm F4.5 lens</h2>
+        <br><br>
+    </div>
+
+
+    <div class="container">
+        <a  data-lightbox="homePortfolio" class="big">
+            <img src="im/photos-html/lb/london-85.jpg"alt="church" />
+        </a>
+    
+        <a  data-lightbox="homePortfolio" class="vertical">
+            <img src="im/photos-html/lb/london-84.jpg" alt="tree"/>
+        </a>
+    
+        <a  data-lightbox="homePortfolio"  class="big">
+            <img src="im/photos-html/lb/london-91.jpg" alt="bridge"/>
+        </a>
+        <a  data-lightbox="homePortfolio" class="big">
+            <img src="im/photos-html/lb/london-88.jpg" alt="bench" />
+        </a>
+    
+        <a  data-lightbox="homePortfolio" class="horizontal">
+            <img src="im/photos-html/lb/london-92.jpg" alt="flower"/>
+        </a>
+        <a data-lightbox="homePortfolio" class="horizontal">
+            <img src="im/photos-html/lb/london-87.jpg" alt="flower"/>
+        </a>
+    
+        <a data-lightbox="homePortfolio" class="horizontal">
+            <img src="im/photos-html/lb/2.jpg" alt="flower"/>
+        </a>
+    
+    
+        <a data-lightbox="homePortfolio" class="">
+            <img src="im/photos-html/lb/3.jpg" alt="ruins"/>
+        </a>
+    
+        
+        <a h data-lightbox="homePortfolio" class="">
+            <img src="im/photos-html/lb/4.jpg" alt="swan"/>
+        </a>
+    
+        <a  data-lightbox="homePortfolio" class="">
+            <img src="im/photos-html/lb/5.jpg" alt="tree"/>
+        </a>
+    
+        <a data-lightbox="homePortfolio"  class="">
+            <img src="im/photos-html/lb/6.jpg" alt="boat"/>
+        </a>
+    
+    
+        <a  data-lightbox="homePortfolio"class="vertical" >
+            <img src="im/photos-html/lb/london-95.jpg" alt="church"/>
+        </a>
+    
+        <a data-lightbox="homePortfolio"  class="vertical">
+            <img src="im/photos-html/lb/london-86.jpg" alt="street" />
+        </a>
+    
+        <a  data-lightbox="homePortfolio" class="">
+            <img src="im/photos-html/lb/london-89.jpg" alt="tree"/>
+        </a>
+    
+        <a  data-lightbox="homePortfolio"  class="horizontl">
+            <img src="im/photos-html/lb/london-90.jpg" alt="flower"/>
+        </a>
+    
+        <a  data-lightbox="homePortfolio" class="horizontl">
+            <img src="im/photos-html/lb/london-93.jpg" alt="flower"/>
+        </a>
+        <a  data-lightbox="homePortfolio" class="verticl">
+            <img src="im/photos-html/lb/london-94.jpg" alt="flower"/>
+        </a>
+    </div>
+
+    <div class="lightbox">
+        <div class="lightbox-nav">
+            <a href="#" class="prev">Previous</a>
+            <a href="#" class="index">1/1</a>  
+            <a href="#" class="next">Next</a>
         </div>
-        <div id="nav-mobile-section">
-            <div id="nav-link-section" class="nav-section">
-                <a href="albums.html">Photo albums</a>
-            </div>
-            <div id="nav-social-section" class="nav-section">
-                <a href="https://www.instagram.com/oscar_photography__/">
-                    <i class="fa-brands fa-instagram"></i>
-                </a>
-                <a href="https://www.youtube.com/@oscar_music__o" target="_blank">
-                    <i class="fa-brands fa-youtube"></i>
-                </a>    
-                <a href="https://open.spotify.com/user/1v6yt4jhtvc00dpm3y8wt1iuf">
-                    <i class="fa-brands fa-spotify"></i>
-                </a>
-            </div>
-            <div id="nav-contact-section" class="nav-section">
-                <div class="menu-container">
-                    <input type="checkbox" id="menu-toggle">
-                    <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                    <nav class="menu">
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
-                            <li><a href="music.html">Music</a></li>
-                            <li><a href="albums.html">photos</a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
+        <div class="lightbox-content">
+            <span class="close-btn">&times;</span>
+            <img src="" alt="">
         </div>
-    </nav>
-    <style>
-        .gallery {
-            margin-top: 100px;  
-        }
-    </style>
-    <head>
-        <html>
-        <body>
-            <div class="title">
-                <br><br>
-                <h4 style="text-align: center;">Leighton Buzzard 2024</h4><br><br>
-                <h2 style="text-align: center;"> I brought my camera to Leigton Buzzard  <br>  these are the photos  which  were taken on my canon 1000d and a 28-200mm F4.5 lens </h2>
-                <br><br>
-                
-            </div>
-            <div class="container">
-            </div>
-            <div class="container">
+    </div>
+
+    
 
 
-                <a  data-lightbox="homePortfolio" class="big">
-                    <img src="im/photos-html/lb/london-85.jpg"alt="church" />
-                </a>
-
-                <a  data-lightbox="homePortfolio" class="vertical">
-                    <img src="im/photos-html/lb/london-84.jpg" alt="tree"/>
-                </a>
-
-                <a  data-lightbox="homePortfolio"  class="big">
-                    <img src="im/photos-html/lb/london-91.jpg" alt="bridge"/>
-                </a>
-                <a  data-lightbox="homePortfolio" class="big">
-                    <img src="im/photos-html/lb/london-88.jpg" alt="bench" />
-                </a>
-
-                <a  data-lightbox="homePortfolio" class="horizontal">
-                    <img src="im/photos-html/lb/london-92.jpg" alt="flower"/>
-                </a>
-                <a data-lightbox="homePortfolio" class="horizontal">
-                    <img src="im/photos-html/lb/london-87.jpg" alt="flower"/>
-                </a>
-
-                <a data-lightbox="homePortfolio" class="horizontal">
-                    <img src="im/photos-html/lb/2.jpg" alt="flower"/>
-                </a>
-
-
-
-
-
-                <a data-lightbox="homePortfolio" class="">
-                    <img src="im/photos-html/lb/3.jpg" alt="ruins"/>
-                </a>
-
-                
-                <a h data-lightbox="homePortfolio" class="">
-                    <img src="im/photos-html/lb/4.jpg" alt="swan"/>
-                </a>
-
-                <a  data-lightbox="homePortfolio" class="">
-                    <img src="im/photos-html/lb/5.jpg" alt="tree"/>
-                </a>
-
-
-                <a data-lightbox="homePortfolio"  class="">
-                    <img src="im/photos-html/lb/6.jpg" alt="boat"/>
-                </a>
-
-
-
-                <a  data-lightbox="homePortfolio"class="vertical" >
-                    <img src="im/photos-html/lb/london-95.jpg" alt="church"/>
-                </a>
-
-
-                <a data-lightbox="homePortfolio"  class="vertical">
-                    <img src="im/photos-html/lb/london-86.jpg" alt="street" />
-                </a>
-
-
-
-
-
-                <a  data-lightbox="homePortfolio" class="">
-                    <img src="im/photos-html/lb/london-89.jpg" alt="tree"/>
-                </a>
-
-                <a  data-lightbox="homePortfolio"  class="horizontl">
-                    <img src="im/photos-html/lb/london-90.jpg" alt="flower"/>
-                </a>
-
-
-
-
-
-
-
-                <a  data-lightbox="homePortfolio" class="horizontl">
-                    <img src="im/photos-html/lb/london-93.jpg" alt="flower"/>
-                </a>
-                <a  data-lightbox="homePortfolio" class="verticl">
-                    <img src="im/photos-html/lb/london-94.jpg" alt="flower"/>
-                </a>
-
-
-
-                
-
-            </div>
-        </body>
-    </html>
-</head>
+</body>
+</html>
