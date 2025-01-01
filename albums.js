@@ -78,11 +78,4 @@ function searchGalleries() {
     }
 }
 
-document.getElementById('search-input').addEventListener('click', function() {
-    this.focus();
-});
-
-document.getElementById('filter-dropdown').addEventListener('click', function() {
-    this.focus();
-});
 
