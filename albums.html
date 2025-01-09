@@ -8,24 +8,29 @@
     <meta name="keywords" content="Oscar, Photography, Music, Photo Albums, Music Releases">
     <meta name="robots" content="index, follow"> 
 
-
     <link rel="stylesheet" href="albums.css">
     <script src="https://kit.fontawesome.com/0952f33f2a.js" crossorigin="anonymous"></script>
     <script src="albums.js"></script>
-
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
-
-    
-    
 </head>
 <body>
 
     <div id="navbar-container"></div>
-    
+
+    <script>
+        // Function to dynamically load nav.html
+        fetch('nav.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('navbar-container').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading nav.html:', error));
+    </script>
+
     <div class="search-bar-container">
         <input type="text" id="search-input" placeholder="Search galleries..." onkeyup="searchGalleries()">
 
@@ -55,13 +60,10 @@
             </optgroup>
         </select>
         
-        
     </div>
     <script>
         
     </script>
-    
- 
 
     <div class="services__music">
         <div class="services__container__music">
@@ -71,7 +73,7 @@
                     <p>No galleries found.</p>
                 </div>
             </div>
-
+            
     <div class="services__music">
         
         <div class="services__container__music">
@@ -327,23 +329,7 @@
                 <p>06/08/24</p>
                 <button onclick="location.href='zutphen.html'">Look!</button>
             </div>
-            
-            
-
-
         </div>
     </div>
-
-    <script>
-        // Function to dynamically load nav.html
-        fetch('nav.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('navbar-container').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading nav.html:', error));
-    </script>
-
-    
 </body>
 </html>
