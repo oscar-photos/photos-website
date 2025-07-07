@@ -609,6 +609,11 @@ optgroup option {
     background-position: center;
 }
 
+.services__card__music[data-id="44"] {
+    background-image: url('im/photos-html/leap/leap-10.jpg');
+    background-size: cover;
+    background-position: center;
+}
 
 
 
