@@ -495,11 +495,7 @@ optgroup option {
     background-position: center;
 }
 
-.services__card__music[data-id="25"] {
-    background-image: url('im/photos-html/Nottingham/nottingham 5.jpg');
-    background-size: cover;
-    background-position: center;
-}
+
 
 .services__card__music[data-id="26"] {
     background-image: url('im/photos-html/oxford/oxford-1.jpg');
